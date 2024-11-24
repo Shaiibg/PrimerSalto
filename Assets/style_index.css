@@ -4,6 +4,7 @@ body {
     font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
 }
 
+/* Estilos generales */
 .header {
     background-color: #1A1A1D;
     color: #fff;
@@ -28,7 +29,6 @@ body {
     font-size: 20px;
     display: flex;
     align-items: center;
-    position: absolute;
 }
 
 .header__logo--image {
@@ -65,7 +65,7 @@ body {
     transition: color 0.3s;
 }
 
-/* ODS Section */
+/* Sección ODS */
 .main__section--ods {
     text-align: left;
     margin: 0 200px 0 200px;
@@ -76,12 +76,13 @@ body {
     text-align: center;
 }
 
-/* Recursos Section */
+/* Sección Recursos */
 .main__section--resources {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     align-items: flex-start;
+    flex-wrap: wrap; /* Para apilar elementos si no hay espacio horizontal */
 }
 
 .section__div--recursos {
@@ -120,7 +121,7 @@ body {
     text-decoration: none;
 }
 
-/* Empleos Section */
+/* Sección Empleos */
 .section__div--empleos {
     margin: 10px;
     padding: 20px;
@@ -131,11 +132,11 @@ body {
     display: flex;
 }
 
-.section__div--cambios{
+.section__div--cambios {
     margin: 10px;
 }
 
-/* Datos Section */
+/* Sección Datos */
 .main__div--datos {
     margin: 20px;
     text-align: center;
@@ -146,4 +147,60 @@ footer {
     padding: 10px 0;
     background-color: #1A1A1D;
     color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .main__section--ods {
+        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+    }
+
+    .header__container {
+        flex-wrap: wrap; /* Permitir que el header sea flexible */
+    }
+
+    .header__logo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__section--ods {
+        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+    }
+
+    .main__section--resources {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    .section__div {
+        height: auto; /* Dejar que el alto se ajuste automáticamente */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav--item {
+        padding: 5px; /* Reducir espaciado entre elementos del menú */
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 16px;
+    }
+
+    .header__nav {
+        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+    }
+
+    .section__div {
+        padding: 10px; /* Más compacto */
+    }
+
+    .div__button {
+        padding: 8px 12px; /* Reducir tamaño del botón */
+    }
 }
