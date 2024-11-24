@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Salto</title>
+    <title>Primer Salto</title> 
     <link rel="stylesheet" href="style.css">
     <meta name="keywords" content=""><!--Palabras clave de la pagina para mejorar el posicionamiento-->
     <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
     <link rel="stylesheet" href="../assets/style_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!--Se ocupará la metodologia BEM para css (Block, Element, Modifier)-->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                Luky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo-image">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#inicio" class="header__nav--link">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
-                    <li class="header__nav-item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
-                    <li class="header__nav-item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="#inicio" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
                 </ul>
             </nav>
-            <button>Modo oscuro</button>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
         </div>
     </header> 
 
     <main class="main">
-        <h1 class="main__tittle" id="inicio">Primer Salto</h1>
-        <section class="main__section">
-            <h2 class="section__subtitle">ODS: Trabajo decente y crecimiento econónico</h2>
+        <!--        <h1 class="main__tittle" id="inicio">Primer Salto</h1>
+-->
+        <section class="main__section--ods">
+            <h1 class="main__tittle">Trabajo decente y crecimiento econónico</h1>
             <p class="section__paragraph">Busca fomentar políticas y prácticas que generen oportunidades laborales, apoyen el emprendimiento, promuevan la innovación, y garanticen condiciones laborales justas, inclusivas y seguras. Como todo esto tiene varios desafio a afrontar, como:
                 <ol class="section__list">
                     <li class="list__item">Falta de oportunidades.</li>
@@ -42,55 +45,57 @@
             </p>
         </section>
         <section class="main__section main__section--resources">
-            <div class="section__div">
+            <div class="section__div--recursos">
                 <h2 class="div__h2">Recursos</h2>
                 <p class="div__paragraph">Encuentra herramientas esenciales para destacar en el mundo laboral, desde plantillas de currículum hasta guías para construir tu presencia profesional en línea. Todo lo que necesitas para dar tu primer salto en el mundo laboral tecnológico.</p>
             </div>
             <div class="section__div">
                 <h2>Currículum</h2>
                 <p>Descubre cómo crear un currículum efectivo, con ejemplos específicos para el sector IT y consejos prácticos para destacar tus habilidades y logros.</p>
-                <a href="curriculum.html"><button class="div__button">Saber más</button></a>
+                <a href="curriculum.html" class="div__a"><button class="div__button">Saber más</button></a>
             </div>
             <div class="section__div">
                 <h2>Entrevistas</h2>
                 <p>Prepárate para brillar en tus entrevistas con guías de preguntas frecuentes y estrategias para responder con confianza.</p>
-                <a href="entrevistas.html"><button class="div__button">Saber más</button></a>
+                <a href="entrevistas.html" class="div__a"><button class="div__button">Saber más</button></a>
             </div>
             <div class="section__div">
                 <h2>Presencia en línea</h2>
-                <p>Construye tu marca profesional en plataformas como LinkedIn, portafolios web y redes sociales para captar la atención de reclutadores.</p>
-                <a href="presencia.html"><button class="div__button">Saber más</button></a>
+                <p>Construye tu marca profesional en plataformas como LinkedIn, portafolios web y redes sociales para captar la atención</p>
+                <a href="presencia.html" class="div__a"><button class="div__button">Saber más</button></a>
             </div>
         </section>
         <section class="main__section main__section--works">
-            <div>
+            <div class="section__div--empleos">
                 <h2>Empleos</h2>
                 <p>Explora oportunidades laborales y prácricas. Aprende cómo leer ofertas, postularte de manera efectiva y destacar en un mercado competitivo.</p>
             </div>
-            <div>
-                <h2>Vacantes Destacadas</h2>
-                <p>Accede a oportunidades laborales exclusivas y prácticas profesionales en empresas líderes del sector tecnológico.</p>
-                <a href="vacantes.html"><button class="div__button">Saber más</button></a>
-            </div>
-            <div>
-                <h2>Guías Para Aplicar</h2>
-                <p>Aprende a interpretar ofertas laborales, postularte correctamente y dar seguimiento para destacar entre los candidatos.</p>
-                <a href="guias.html"><button class="div__button">Saber más</button></a>
-            </div>
-            <div>
-                <h2>Sectores Tecnológicos</h2>
-                <p>Conoce las áreas clave del mercado IT, como desarrollo de software, ciencia de datos y ciberseguridad, y descubre cuál se adapta a ti.</p>
-                <a href="sectores.html"><button class="div__button">Saber más</button></a>
+            <div class="main__divgeneral">
+                <div class="section__div section__div--cambios">
+                    <h2>Vacantes Destacadas</h2>
+                    <p>Accede a oportunidades laborales exclusivas y prácticas profesionales en empresas líderes del sector tecnológico.</p>
+                    <a href="vacantes.html" class="div__a"><button class="div__button">Saber más</button></a>
+                </div>
+                <div class="section__div section__div--cambios">
+                    <h2>Guías Para Aplicar</h2>
+                    <p>Aprende a interpretar ofertas laborales, postularte correctamente y dar seguimiento para destacar entre los candidatos.</p>
+                    <a href="guias.html" class="div__a"><button class="div__button">Saber más</button></a>
+                </div>
+                <div class="section__div section__div--cambios">
+                    <h2>Sectores Tecnológicos</h2>
+                    <p>Conoce las áreas clave del mercado IT, como desarrollo de software, ciencia de datos y ciberseguridad, y descubre cuál se adapta a ti.</p>
+                    <a href="sectores.html" class="div__a"><button class="div__button">Saber más</button></a>
+                </div>
             </div>
         </section>
         <section class="main__section main__section--data">
-            <div>
+            <div class="main__div--datos">
                 <h2>Datos</h2>
                 <p>Accede a datos clave para entender el mercado laboral en tecnología. Descubre estadísticas de empleo que te ayudarán a identificar tendencias y analiza gráficos detallados sobre el crecimiento y las oportunidades del sector TI en México.
                 </p>
+                <a href="estadisticas.html"><button class="div__button">estadísticas de empleo</button></a>
+            <a href="graficas.html"><button class="div__button"> Gráficas de México en el sector TI</button></a>
             </div>
-            <a href="estadisticas.html"><button>estadísticas de empleo</button></a>
-            <a href="graficas.html"><button> Gráficas de México en el sector TI</button></a>
         </section>
     </main>
     <footer>
