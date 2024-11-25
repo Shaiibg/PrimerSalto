@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: #fff;
+    background-color: #000000;
+    color: #fff;
     font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
 }
 
@@ -29,11 +30,13 @@ body {
     font-size: 20px;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .header__logo--image {
     height: 20px;
     width: 40px;
+    margin-left: -17px;
 }
 
 .header__nav--item {
@@ -51,6 +54,57 @@ body {
     color: #A64D79;
     transition: color 0.3s;
 }
+
+/* Contenedor principal con imagen de fondo */
+/* Contenedor principal con imagen de fondo */
+.ods__container--background {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+.background-img {
+    position: absolute; /* Hace que la imagen esté en el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Ajusta la altura */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
+    z-index: -1; /* Asegura que el contenido esté sobre la imagen */
+}
+
+/* Contenedor interno con opacidad */
+.ods__container--content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
+    color: white;
+    padding: 20px;
+    width: 87.5%; /* Ancho reducido en un octavo respecto al contenedor principal */
+    height: 100%; /* La misma altura que el contenedor principal */
+    border: none; /* Borde blanco del contenedor de texto */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+    border-radius: 0; /* Elimina el borde curvo, lo hace cuadrado */
+}
+
+/* Título */
+.ods__tittle {
+    font-size: 3em; /* Tamaño grande para el título */
+    margin: 0 0 10px 0; /* Espaciado reducido entre título y párrafo */
+    text-align: left;
+}
+
+/* Párrafo */
+.ods__paragraph {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
 
 #toggle {
     display: none;
@@ -94,8 +148,10 @@ body {
 
 .section__div {
     flex: 1;
-    border: 2px solid #000;
+    border: 1px solid #ffffff;
     border-radius: 40px;
+    background-color: #000;
+    color: #fff;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -111,7 +167,7 @@ body {
     color: #fff;
     padding: 12px 20px;
     font-weight: bold;
-    border: none;
+    border: 2px solid #fff;
 }
 
 .div__a {
@@ -123,6 +179,8 @@ body {
 
 /* Sección Empleos */
 .section__div--empleos {
+    background-color: #000; /* Fondo negro */
+    border: 1px solid #fff;
     margin: 10px;
     padding: 20px;
     text-align: left;
@@ -138,6 +196,8 @@ body {
 
 /* Sección Datos */
 .main__div--datos {
+    background-color: #000; /* Fondo negro */
+    border: 1px solid #fff; /* Borde blanco */
     margin: 20px;
     text-align: center;
 }
