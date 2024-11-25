@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #000000;
     color: #fff;
-    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 /* Estilos generales */
@@ -65,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: 1px solid #fff;
+    border: none;
 }
 
 .background-img {
@@ -92,17 +92,62 @@ body {
 
 /* Título */
 .ods__tittle {
-    font-size: 3em; /* Tamaño grande para el título */
-    margin: 0 0 10px 0; /* Espaciado reducido entre título y párrafo */
+    font-size: 4em; /* Tamaño grande para el título */
+    margin: 0px 0 -10px 0; /* Espaciado reducido entre título y párrafo */
     text-align: left;
 }
 
 /* Párrafo */
 .ods__paragraph {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5;
     margin: 0;
     text-align: left;
+    width: 80%; /* Hace que el párrafo ocupe solo el 80% del contenedor */
+    padding-top: 20px; /* Mueve el texto hacia abajo un poco */
+}
+
+/* Sección de estadísticas */
+.statistics {
+    margin-top: 250px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+.statistics__title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.statistics__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite apilar en pantallas pequeñas */
+}
+
+.statistics__item {
+    flex: 1;
+    max-width: 300px; /* Ajusta el ancho de cada estadística */
+    text-align: center;
+}
+
+.statistics__number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF0000; /* Rojo brillante */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.statistics__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 
@@ -132,12 +177,32 @@ body {
 
 /* Sección Recursos */
 .main__section--resources {
+    margin-top: 250px;
+    margin-bottom: 250px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     align-items: flex-start;
     flex-wrap: wrap; /* Para apilar elementos si no hay espacio horizontal */
+    border: 1px solid #fff;
 }
+
+.div__h2 {
+    font-size: 3rem; /* Cambia el tamaño del título aquí (por ejemplo, 2rem = 32px) */
+    font-weight: bold; /* Opcional: añade más énfasis al texto */
+    text-align: left; /* Opcional: centra el texto si es necesario */
+    margin-bottom: 10px; /* Ajusta el espacio inferior entre el título y la descripción */
+}
+
+.div__paragraph_ {
+    font-size: 1.5rem; /* Cambia el tamaño del texto aquí (por ejemplo, 1rem = 16px) */
+    line-height: 1.5; /* Ajusta la separación entre líneas */
+    text-align: left; /* Opcional: justifica el texto para un aspecto más uniforme */
+    margin: 10px 0; /* Ajusta los márgenes alrededor de la descripción */
+}
+
+
+
 
 .section__div--recursos {
     flex: 1.5;
@@ -146,8 +211,11 @@ body {
     text-align: left;
 }
 
+
+
 .section__div {
-    flex: 1;
+    flex: 0 0 auto; /* Desactiva el crecimiento automático */
+    width: 200px; /* Establece un ancho fijo para los cuadros */
     border: 1px solid #ffffff;
     border-radius: 40px;
     background-color: #000;
@@ -156,9 +224,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
-    text-align: center;
+    height: 400px;
+    margin: 0 auto; /* Centra los cuadros dentro de su contenedor */
 }
+
 
 .div__button {
     margin-top: auto;
@@ -186,20 +255,95 @@ body {
     text-align: left;
 }
 
+.section__div--empleos h2 {
+    font-size: 3rem; /* Cambia el tamaño del título */
+    font-weight: bold; /* Puedes ajustar el grosor si lo necesitas */
+    margin-bottom: 10px; /* Ajusta el espacio inferior entre el título y el párrafo */
+
+}
+
+
+.section__div--empleos p {
+    font-size: 1.5rem; /* Cambia el tamaño del texto del párrafo */
+    line-height: 1.5; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    margin: 0; /* Asegúrate de que no haya márgenes adicionales */
+}
+
+
 .main__divgeneral {
     display: flex;
+    margin-top: -30px; /* Usa valores negativos para moverlos hacia arriba */
+    gap: 20px; /* Espacio entre las tarjetas */
 }
 
 .section__div--cambios {
-    margin: 10px;
+    flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
+    margin: 10px; /* Espacio entre los cuadros */
+    padding: 15px; /* Espaciado interno dentro de los cuadros */
+    width: 30%; /* Ajusta el ancho de cada cuadro */
+    min-width: 250px; /* Opcional: establece un ancho mínimo */
+    height: auto; /* Permite que la altura se ajuste dinámicamente */
 }
 
 /* Sección Datos */
+.main__section--data {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #fff; /* Borde blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+}
+
+.main__div--datos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main__div--datos p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
 .main__div--datos {
-    background-color: #000; 
-    border: 1px solid #fff; 
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Botones de la sección de datos */
+.div__button_data {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #fff; /* Borde blanco */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: capitalize;
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo para evitar que sean demasiado grandes */
+    margin: 0 auto; /* Centrar los botones */
+}
+
+.div__button_data:hover {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+}
+
+/* Links para asegurar que el botón se muestre correctamente */
+.main__div--datos a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
     text-align: center;
+    margin-bottom: 15px; /* Espaciado entre los botones */
 }
 
 .background-img{
