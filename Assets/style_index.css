@@ -179,7 +179,7 @@ body {
 
 /* Sección Empleos */
 .section__div--empleos {
-    background-color: #000; /* Fondo negro */
+    background-color: #000; 
     border: 1px solid #fff;
     margin: 10px;
     padding: 20px;
@@ -196,10 +196,14 @@ body {
 
 /* Sección Datos */
 .main__div--datos {
-    background-color: #000; /* Fondo negro */
-    border: 1px solid #fff; /* Borde blanco */
+    background-color: #000; 
+    border: 1px solid #fff; 
     margin: 20px;
     text-align: center;
+}
+
+.background-img{
+    height: 468px;
 }
 
 footer {
