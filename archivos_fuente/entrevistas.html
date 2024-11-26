@@ -3,79 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style_entrevistas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="keywords" content=""><!--Palabras clave de la pagina para mejorar el posicionamiento-->
+    <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
     <title>Entrevistas</title>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                Luky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo-image">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav--link">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
-                    <li class="header__nav-item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
-                    <li class="header__nav-item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
                 </ul>
             </nav>
-            <button>Modo oscuro</button>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
         </div>
     </header> 
 
-    <section class="preguntas">
-        <div class="preguntas__introduccion">
-            <h2 class="preguntas__titulo">Prepárate para Brillar en tus Entrevistas</h2>
-            <p class="preguntas__descripcion">Domina las preguntas frecuentes y aprende a dar respuestas efectivas que destaquen tus habilidades y logros.</p>
-        </div>
-        <div class="preguntas__frecuentes">
-            <h2 class="preguntas__titulo">Preguntas Frecuentes</h2>
-            <p class="preguntas__descripcion">Conoce las preguntas más comunes en entrevistas para roles tecnológicos y aprende cómo abordarlas con confianza.</p>
-        </div>
-        <div class="preguntas__lista">
-            <div class="preguntas__item">
-                <h2 class="preguntas__pregunta">¿Cuál es tu experiencia con [tecnología específica]?</h2>
-                <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+    <main>
+        <section class="preguntas">
+            <div class="preguntas__introduccion">
+                <h2 class="preguntas__titulo">Prepárate para Brillar en tus Entrevistas</h2>
+                <p class="preguntas__descripcion">Domina las preguntas frecuentes y aprende a dar respuestas efectivas que destaquen tus habilidades y logros.</p>
             </div>
-            <div class="preguntas__item">
-                <h2 class="preguntas__pregunta">¿Cómo manejas proyectos con plazos ajustados?</h2>
-                <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+            <div class="preguntas__contenedor">
+                <div class="preguntas__frecuentes">
+                    <h2 class="preguntas__titulo">Preguntas Frecuentes</h2>
+                    <p class="preguntas__descripcion">Conoce las preguntas más comunes en entrevistas para roles tecnológicos y aprende cómo abordarlas con confianza.</p>
+                </div>
+                <div class="preguntas__lista">
+                    <div class="preguntas__item">
+                        <h2 class="preguntas__pregunta">¿Cuál es tu experiencia con [tecnología específica]?</h2>
+                        <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+                    </div>
+                    <div class="preguntas__item">
+                        <h2 class="preguntas__pregunta">¿Cómo manejas proyectos con plazos ajustados?</h2>
+                        <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+                    </div>
+                    <div class="preguntas__item">
+                        <h2 class="preguntas__pregunta">¿Qué tecnologías o lenguajes de programación dominas mejor?</h2>
+                        <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+                    </div>
+                    <div class="preguntas__item">
+                        <h2 class="preguntas__pregunta">¿Cómo te mantienes actualizado con las tendencias tecnológicas?</h2>
+                        <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+                    </div>
+                </div>
             </div>
-            <div class="preguntas__item">
-                <h2 class="preguntas__pregunta">¿Qué tecnologías o lenguajes de programación dominas mejor?</h2>
-                <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+        </section>
+        
+        <section class="respuestas">
+            <div class="respuestas__introduccion">
+                <h2 class="respuestas__titulo">Respuestas Efectivas</h2>
+                <p class="respuestas__descripcion">Aprende a estructurar tus respuestas usando técnicas como la metodología STAR (Situación, Tarea, Acción, Resultado) para demostrar tus logros de manera clara y profesional.</p>
             </div>
-            <div class="preguntas__item">
-                <h2 class="preguntas__pregunta">¿Cómo te mantienes actualizado con las tendencias tecnológicas?</h2>
-                <p class="preguntas__explicacion">Explicación breve de por qué los reclutadores hacen esta pregunta.</p>
+            <div class="respuestas__lista">
+                <div class="respuestas__item">
+                    <h3 class="respuestas__pregunta">¿Cuál es tu experiencia con [tecnología específica]?</h3>
+                    <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
+                </div>
+                <div class="respuestas__item">
+                    <h3 class="respuestas__pregunta">¿Cómo manejas proyectos con plazos ajustados?</h3>
+                    <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
+                </div>
+                <div class="respuestas__item">
+                    <h3 class="respuestas__pregunta">¿Qué tecnologías o lenguajes de programación dominas mejor?</h3>
+                    <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
+                </div>
+                <div class="respuestas__item">
+                    <h3 class="respuestas__pregunta">¿Cómo te mantienes actualizado con las tendencias tecnológicas?</h3>
+                    <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="respuestas">
-        <div class="respuestas__introduccion">
-            <h2 class="respuestas__titulo">Respuestas Efectivas</h2>
-            <p class="respuestas__descripcion">Aprende a estructurar tus respuestas usando técnicas como la metodología STAR (Situación, Tarea, Acción, Resultado) para demostrar tus logros de manera clara y profesional.</p>
-        </div>
-        <div class="respuestas__lista">
-            <div class="respuestas__item">
-                <h3 class="respuestas__pregunta">¿Cuál es tu experiencia con [tecnología específica]?</h3>
-                <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
-            </div>
-            <div class="respuestas__item">
-                <h3 class="respuestas__pregunta">¿Cómo manejas proyectos con plazos ajustados?</h3>
-                <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
-            </div>
-            <div class="respuestas__item">
-                <h3 class="respuestas__pregunta">¿Qué tecnologías o lenguajes de programación dominas mejor?</h3>
-                <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
-            </div>
-            <div class="respuestas__item">
-                <h3 class="respuestas__pregunta">¿Cómo te mantienes actualizado con las tendencias tecnológicas?</h3>
-                <p class="respuestas__ejemplo">Ejemplos de respuestas bien elaboradas para preguntas clave y Consejos prácticos.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2024 Lucky. Todos los derechos reservados.</p>
