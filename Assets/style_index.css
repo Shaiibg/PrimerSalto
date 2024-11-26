@@ -3,13 +3,17 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
+    padding-top: 70px; 
 }
 
-/* Estilos generales */
 .header {
     background-color: #1A1A1D;
     color: #fff;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 .header__nav {
