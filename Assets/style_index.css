@@ -3,17 +3,13 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
-    padding-top: 70px; 
 }
 
+/* Estilos generales */
 .header {
     background-color: #1A1A1D;
     color: #fff;
-    padding: 0 20px;
-    width: 100%; 
-    position: fixed; 
-    top: 0; 
-    z-index: 1000; 
+    padding: 0 20px 0 20px;
 }
 
 .header__nav {
@@ -55,6 +51,19 @@ body {
 }
 
 .header__nav--link:hover {
+    color: #A64D79;
+    transition: color 0.3s;
+}
+
+#toggle {
+    display: none;
+}
+
+#label_toggle {
+    font-size: 1.3em;
+}
+
+#label_toggle:hover {
     color: #A64D79;
     transition: color 0.3s;
 }
@@ -152,20 +161,6 @@ body {
 .statistics__text {
     font-size: 1.2rem;
     line-height: 1.5;
-}
-
-
-#toggle {
-    display: none;
-}
-
-#label_toggle {
-    font-size: 1.3em;
-}
-
-#label_toggle:hover {
-    color: #A64D79;
-    transition: color 0.3s;
 }
 
 /* Sección ODS */
