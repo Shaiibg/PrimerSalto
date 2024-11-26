@@ -10,6 +10,7 @@ body {
     background-color: #1A1A1D;
     color: #fff;
     padding: 0 20px 0 20px;
+    
 }
 
 .header__nav {
@@ -67,7 +68,6 @@ body {
     color: #A64D79;
     transition: color 0.3s;
 }
-
 /* Contenedor principal con imagen de fondo */
 /* Contenedor principal con imagen de fondo */
 .ods__container--background {
