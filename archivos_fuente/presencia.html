@@ -3,50 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style_presencia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="keywords" content=""><!--Palabras clave de la pagina para mejorar el posicionamiento-->
+    <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
     <title>Presencia en lina</title>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                Luky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo-image">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav--link">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
-                    <li class="header__nav-item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
-                    <li class="header__nav-item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
                 </ul>
             </nav>
-            <button>Modo oscuro</button>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
         </div>
-    </header> 
-
-    <div>
-        <h2>Construye tu Marca Profesional en el Mundo Digital</h2>
-        <p>Aprende a destacar en plataformas clave, desde LinkedIn hasta portafolios web, y domina las herramientas necesarias para captar la atención de reclutadores.</p>
-    </div>
+    </header>
+    <section class="intro">
+    <div class="container_intro">
+        <div class="text-content_intro">
+          <h2 class="text-content_intro__title">Construye tu Marca Profesional en el Mundo Digital</h2>
+          <p class="text-content_intro___description">Aprende a destacar en plataformas clave, desde LinkedIn hasta portafolios web, y domina las herramientas necesarias para captar la atención de reclutadores.</p>
+        </div>
+        <div class="image-content_intro">
+          <img class="imagenintro" src="../Imagenes/trabajo_fondo.jpg" alt="Imagen"> 
+        </div>
+      </div>
+    </section>
     <section class="linkedin">
         <table class="linkedin__tabla">
             <tr>
                 <td rowspan="4" class="linkedin__informacion">
                     <h2 class="linkedin__titulo">Potencia tu Perfil en LinkedIn</h2>
-                    <p class="linkedin__descripcion">
+                    <p class="linkedin__descripcionp1">
                         Descubre cómo optimizar tu perfil de LinkedIn para atraer a reclutadores del sector TI. Aprende a crear un resumen impactante, elegir palabras clave y construir conexiones estratégicas.
                     </p>
                 </td>
-                <td class="linkedin__detalle">Foto profesional y encabezado llamativo.</td>
+
+                <td class="linkedin__detalle">
+                    <h2 class="titulo_detalle1">Foto profesional y encabezado llamativo.</h2>
+                    <p class="descipcion_detalle1">Tu perfil de LinkedIn es tu carta de presentación online. Para destacar y generar una primera impresión impactante, necesitas una foto profesional que inspire confianza y un encabezado que capture la atención.</p>
+                    <ul class="linkedin__lista">
+                      <li class="linkedin__lista-item">
+                        <p class="descipcion_detalle1"> <strong>Foto profesional: </strong> Transmite profesionalismo, seriedad y genera confianza.  Invierte en una buena foto que te represente de forma adecuada.</p>
+                      </li>
+                      <li class="linkedin__lista-item">
+                        <p class="descipcion_detalle1"><strong>Encabezado llamativo: </strong>  Utiliza palabras clave que resuman tu experiencia y aspiraciones. Destaca tus habilidades y logros más relevantes. Sé conciso y directo.</p>
+                      </li>
+                    </ul>
+                    <p class="descipcion_detalle1">Recuerda, una imagen vale más que mil palabras, y un buen encabezado puede abrirte muchas puertas.</p>
+                  </td>
+
             </tr>
             <tr>
-                <td class="linkedin__detalle">Uso de palabras clave para búsquedas.</td>
-            </tr>
-            <tr>
-                <td class="linkedin__detalle">Participación activa en publicaciones de la industria.</td>
-            </tr>
-            <tr>
-                <td class="linkedin__detalle">Únete a grupos y comunidades relevantes.</td>
-            </tr>
+                <td class="linkedin__detalle">
+                  <h2 class="titulo_detalle2">Uso de palabras clave para búsquedas.</h2>
+                  <p class="descipcion_detalle2">Para que tu perfil sea encontrado por reclutadores y profesionales de tu área, es fundamental utilizar las palabras clave adecuadas.</p>
+                  <ul class="linkedin__lista">
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle2"><strong>Investiga:</strong> Identifica las palabras clave más relevantes en tu industria y área de especialización. Puedes usar herramientas como LinkedIn Jobs o Google Trends.</p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle2"><strong>Incorpóralas estratégicamente:</strong>  Incluye las palabras clave en tu titular, resumen, experiencia laboral y habilidades.</p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle2"><strong>Sé natural:</strong> No abuses de las palabras clave.  El texto debe leerse de forma fluida y natural.</p>
+                    </li>
+                  </ul>
+                  <p class="descipcion_detalle2">Un buen uso de palabras clave aumenta la visibilidad de tu perfil y te conecta con las oportunidades adecuadas.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="linkedin__detalle">
+                  <h2 class="titulo_detalle3">Participación activa en publicaciones de la industria.</h2>
+                  <p class="descipcion_detalle3">LinkedIn no es solo una plataforma para mostrar tu perfil, ¡también es una red social! Participar activamente en publicaciones relevantes a tu industria te ayuda a:</p>
+                  <ul class="linkedin__lista">
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle3"><strong>Aumentar tu visibilidad:</strong>  Comentar y compartir contenido relevante te permite conectar con otros profesionales y aumentar tu alcance.</p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle3"><strong>Demostrar tu conocimiento:</strong> Comparte tu experiencia y conocimientos a través de comentarios insightful y publicaciones propias.</p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle3"><strong>Mantenerte actualizado:</strong>  Sigue a líderes de opinión y empresas de tu sector para estar al tanto de las últimas tendencias.</p>
+                    </li>
+                  </ul>
+                  <p class="descipcion_detalle3">Interactúa con publicaciones, comparte artículos interesantes y únete a grupos de debate para construir una presencia sólida en LinkedIn.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="linkedin__detalle">
+                  <h2 class="titulo_detalle4">Únete a grupos y comunidades relevantes.</h2>
+                  <p class="descipcion_detalle4">Los grupos de LinkedIn son espacios ideales para conectar con profesionales de tu sector,  participar en debates y acceder a información valiosa.</p>
+                  <ul class="linkedin__lista">
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle4"><strong>Encuentra tu nicho:</strong> Busca grupos relacionados con tu industria, área de especialización o intereses profesionales.</p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle4"><strong>Participa activamente:</strong>  Comenta publicaciones, responde preguntas y comparte tu experiencia. </p>
+                    </li>
+                    <li class="linkedin__lista-item">
+                      <p class="descipcion_detalle4"><strong>Conecta con otros miembros:</strong> Inicia conversaciones, envía mensajes y amplía tu red de contactos.</p>
+                    </li>
+                  </ul>
+                  <p class="descipcion_detalle4">Unirse a grupos relevantes te permite aprender, compartir conocimiento y establecer conexiones valiosas dentro de tu campo.</p>
+                </td>
+              </tr>
         </table>
     </section>
     
@@ -59,29 +129,47 @@
         </div>
         <div class="portafolio__contenido">
             <h3 class="portafolio__subtitulo">Componentes recomendados para el portafolio</h3>
+          
             <div class="portafolio__seccion">
-                <h4 class="portafolio__subseccion-titulo">Introducción y habilidades principales.</h4>
-                <p class="portafolio__subseccion-descripcion">
-                    Bienvenido a mi portafolio. Aquí encontrarás una visión general de quién soy y qué puedo ofrecer. Soy un profesional apasionado con un enfoque en [tu área de especialización, por ejemplo: desarrollo web, diseño gráfico, análisis de datos]. Mi objetivo es aportar soluciones creativas, eficientes y alineadas con las necesidades de cada proyecto.
-    
-                    A lo largo de mi trayectoria, he adquirido habilidades clave como [habilidades específicas: programación en JavaScript, diseño UX/UI, gestión de proyectos, análisis estadístico]. Estas competencias, combinadas con mi compromiso por el aprendizaje continuo, me permiten enfrentar desafíos complejos y superar expectativas.
-    
-                    Explora mis proyectos y descubre cómo puedo ayudarte a alcanzar tus objetivos.
-                </p>
+              <h4 class="portafolio__subseccion-titulo">Introducción y habilidades principales.</h4>
+              <p class="portafolio__subseccion-descripcion">
+                Tu portafolio debe comenzar con una breve introducción sobre ti.  Describe quién eres, qué haces y qué te apasiona. Menciona tu área de especialización y las habilidades más relevantes que te diferencian. 
+                <br><br>
+                Puedes incluir una lista con tus principales habilidades,  como por ejemplo:
+                <ul class="portafolio__lista">
+                  <li class="portafolio__lista-item">Dominio de lenguajes de programación (JavaScript, Python, etc.)</li>
+                  <li class="portafolio__lista-item">Experiencia en diseño UX/UI</li>
+                  <li class="portafolio__lista-item">Habilidades de comunicación y trabajo en equipo</li>
+                </ul>
+                Recuerda que esta sección es tu carta de presentación, ¡haz que cuente!
+              </p>
             </div>
+          
             <div class="portafolio__seccion">
-                <h4 class="portafolio__subseccion-titulo">Proyectos destacados (con imágenes y descripciones).</h4>
-                <p class="portafolio__subseccion-descripcion">
-                    En este apartado se colocarán tus proyectos más importantes junto con sus imágenes. Es importante no sobresaturar de información al reclutador con todos tus proyectos; de 3 a 4 proyectos está perfecto. Puedes agregar un apartado de 'Saber más' para colocar todos tus proyectos y mostrárselos a quien esté interesado.
-                </p>
+              <h4 class="portafolio__subseccion-titulo">Proyectos destacados (con imágenes y descripciones).</h4>
+              <p class="portafolio__subseccion-descripcion">
+                En esta sección, muestra tus proyectos más relevantes.  Selecciona aquellos que mejor demuestren tus habilidades y experiencia.
+                <br><br>
+                Incluye imágenes o capturas de pantalla de cada proyecto y una breve descripción que explique:
+                <ul class="portafolio__lista">
+                  <li class="portafolio__lista-item">El objetivo del proyecto</li>
+                  <li class="portafolio__lista-item">Las tecnologías utilizadas</li>
+                  <li class="portafolio__lista-item">Los resultados obtenidos</li>
+                </ul>
+                Si tienes muchos proyectos, puedes crear una sección aparte con todos ellos y enlazarla desde aquí.
+              </p>
             </div>
+          
             <div class="portafolio__seccion">
-                <h4 class="portafolio__subseccion-titulo">Enlace a tu LinkedIn y/o GitHub.</h4>
-                <p class="portafolio__subseccion-descripcion">
-                    Puedes incluir alguna otra red para que te conozcan. Es recomendable no colocar redes personales; no olvidemos que estamos buscando ámbitos profesionales.
-                </p>
+              <h4 class="portafolio__subseccion-titulo">Enlace a tu LinkedIn y/o GitHub.</h4>
+              <p class="portafolio__subseccion-descripcion">
+                Finaliza tu portafolio con enlaces a tus perfiles profesionales en redes como LinkedIn o GitHub. Esto permitirá a los reclutadores o clientes potenciales obtener más información sobre ti y tu experiencia.
+                <br><br>
+                Asegúrate de que tus perfiles estén actualizados y que reflejen la información que presentas en tu portafolio.
+              </p>
             </div>
-        </div>
+          
+          </div>
     </section>
     
     <footer>
