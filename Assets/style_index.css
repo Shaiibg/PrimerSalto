@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    background-color: #282424;
+    background-color: #181414;
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 /* Estilos generales */
 .header {
-    background-color: #1A1A1D;
+    background-color: #282424;
     color: #fff;
     padding: 0 20px 0 20px;
     
