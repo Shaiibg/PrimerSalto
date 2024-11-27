@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000000;
+    background-color: #181414;
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
@@ -84,7 +84,6 @@ body {
 
 .background-img {
     position: absolute; /* Hace que la imagen esté en el fondo */
-    top: 0;
     left: 0;
     width: 100%; /* Asegura que la imagen ocupe todo el ancho */
     height: 100%; /* Ajusta la altura */
@@ -121,48 +120,6 @@ body {
     padding-top: 20px; /* Mueve el texto hacia abajo un poco */
 }
 
-/* Sección de estadísticas */
-.statistics {
-    margin-top: 250px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    
-}
-
-.statistics__title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-.statistics__container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Permite apilar en pantallas pequeñas */
-}
-
-.statistics__item {
-    flex: 1;
-    max-width: 300px; /* Ajusta el ancho de cada estadística */
-    text-align: center;
-}
-
-.statistics__number {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #FF0000; /* Rojo brillante */
-    display: block;
-    margin-bottom: 10px;
-}
-
-.statistics__text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
 
 /* Sección ODS */
 .main__section--ods {
@@ -178,13 +135,13 @@ body {
 /* Sección Recursos */
 .main__section--resources {
     margin-top: 250px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     align-items: flex-start;
-    flex-wrap: wrap; /* Para apilar elementos si no hay espacio horizontal */
-    border: 1px solid #fff;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
 .div__h2 {
@@ -195,13 +152,10 @@ body {
 }
 
 .div__paragraph_ {
-    font-size: 1.5rem; /* Cambia el tamaño del texto aquí (por ejemplo, 1rem = 16px) */
     line-height: 1.5; /* Ajusta la separación entre líneas */
     text-align: left; /* Opcional: justifica el texto para un aspecto más uniforme */
     margin: 10px 0; /* Ajusta los márgenes alrededor de la descripción */
 }
-
-
 
 
 .section__div--recursos {
@@ -211,32 +165,57 @@ body {
     text-align: left;
 }
 
+.section--curriculo, .guias{
+    color: #ffd4d4;
+}
+
+.button--curriculum, .button--guias{
+    background-color: #ffd4d4;
+}
+
+.section__h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+.section--entrevista, .vacantes{
+    color: #c8b4d4;
+}
+
+.button--entrevista, .button--vacantes{
+    background-color: #c8b4d4;
+}
+
+.section--presencia, .sectores{
+    color: #ffcc64;
+}
+
+.button--presencia, .button--sectores{
+    background-color: #ffcc64;
+}
 
 
 .section__div {
     flex: 0 0 auto; /* Desactiva el crecimiento automático */
     width: 200px; /* Establece un ancho fijo para los cuadros */
-    border: 1px solid #ffffff;
-    border-radius: 40px;
-    background-color: #000;
+    border-radius: 10px;
+    background-color: #282424;
     color: #fff;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
-    margin: 0 auto; /* Centra los cuadros dentro de su contenedor */
+    margin: 20px;
 }
 
 
 .div__button {
     margin-top: auto;
     border-radius: 40px;
-    background-color: #1A1A1D;
-    color: #fff;
     padding: 12px 20px;
     font-weight: bold;
-    border: 2px solid #fff;
+    border: none; /* Elimina los bordes predeterminados */
+
 }
 
 .div__a {
@@ -248,15 +227,17 @@ body {
 
 /* Sección Empleos */
 .section__div--empleos {
-    background-color: #000; 
-    border: 1px solid #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
     margin: 10px;
     padding: 20px;
     text-align: left;
 }
 
 .section__div--empleos h2 {
-    font-size: 3rem; /* Cambia el tamaño del título */
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold;
     font-weight: bold; /* Puedes ajustar el grosor si lo necesitas */
     margin-bottom: 10px; /* Ajusta el espacio inferior entre el título y el párrafo */
 
@@ -264,9 +245,8 @@ body {
 
 
 .section__div--empleos p {
-    font-size: 1.5rem; /* Cambia el tamaño del texto del párrafo */
+    text-align: center;
     line-height: 1.5; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
-    margin: 0; /* Asegúrate de que no haya márgenes adicionales */
 }
 
 
@@ -318,9 +298,10 @@ body {
 
 /* Botones de la sección de datos */
 .div__button_data {
-    background-color: #000; /* Fondo negro */
+    background-color: #782c8c;
     color: #fff; /* Texto blanco */
     border: 2px solid #fff; /* Borde blanco */
+    border-radius: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -348,6 +329,49 @@ body {
 
 .background-img{
     height: 468px;
+}
+
+/* Sección de estadísticas */
+.statistics {
+    margin-top: 250px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+.statistics__title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.statistics__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite apilar en pantallas pequeñas */
+}
+
+.statistics__item {
+    flex: 1;
+    max-width: 300px; /* Ajusta el ancho de cada estadística */
+    text-align: center;
+}
+
+.statistics__number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF0000; /* Rojo brillante */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.statistics__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 footer {

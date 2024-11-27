@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000000;
+    background: linear-gradient(to top, #000000 77%, #782c8c 95%);
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
@@ -71,13 +71,13 @@ main{
 }
 
 .plantillas__introduccion{
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     width: 50%;
     padding: 10px;
 }
 
 .plantillas__contenido{
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     margin-top: 10px;
 }
 
