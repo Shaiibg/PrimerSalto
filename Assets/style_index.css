@@ -144,18 +144,9 @@ body {
 }
 
 .div__h2 {
-    font-size: 3rem; /* Cambia el tamaño del título aquí (por ejemplo, 2rem = 32px) */
-    font-weight: bold; /* Opcional: añade más énfasis al texto */
-    text-align: left; /* Opcional: centra el texto si es necesario */
-    margin-bottom: 10px; /* Ajusta el espacio inferior entre el título y la descripción */
+    font-size: 3rem; 
+    font-weight: bold; 
 }
-
-.div__paragraph_ {
-    line-height: 1.5; /* Ajusta la separación entre líneas */
-    text-align: left; /* Opcional: justifica el texto para un aspecto más uniforme */
-    margin: 10px 0; /* Ajusta los márgenes alrededor de la descripción */
-}
-
 
 .section__div--recursos {
     flex: 1.5;
@@ -303,18 +294,16 @@ body {
 /* Botones de la sección de datos */
 .div__button_data {
     background-color: #a4bcd4;
-    color: #000; /* Texto blanco */
+    color: #000; 
     border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    text-transform: capitalize;
-    width: 100%; /* Que ocupe todo el ancho disponible */
-    max-width: 300px; /* Ancho máximo para evitar que sean demasiado grandes */
-    margin: 0 auto; /* Centrar los botones */
+    width: 100%;
+    max-width: 300px; 
 }
 
 .div__button_data:hover {
