@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #181414;
+    background-image: linear-gradient(to right, #000, #283186); 
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
@@ -70,6 +70,16 @@ main{
     transition: color 0.3s;
 }
 
+.plantillas__titulo{
+font-size: 3em;
+margin-bottom: -15px;
+}
+
+.plantillas__descripcion{
+font-size: 1.4em;
+}
+
+
 .plantillas__introduccion{
     /*border: 1px solid #fff;*/
     width: 50%;
@@ -78,7 +88,7 @@ main{
 
 .plantillas__contenido{
     /*border: 1px solid #fff;*/
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .plantillas__subtitulo{
@@ -86,7 +96,7 @@ main{
 }
 
 .plantillas__imagenes{
-    background-color: #282424;
+    background-color: #000000;
     border-radius: 10px;
     display: flex; 
     justify-content: center; 
@@ -97,7 +107,7 @@ main{
 }
 
 .plantillas__imagen{
-    height: 200px;
+    height: 500px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -115,6 +125,10 @@ main{
     color: #fff; 
 }
 
+.redaccion__item {
+    margin-bottom: 10px;
+  }
+
 th, td {
     border: 2px solid #fff; 
     padding: 10px; 
@@ -124,6 +138,58 @@ th, td {
     font-weight: bold;
     text-align: center;
 }
+
+.redaccion{
+margin-top: 125px;
+
+}
+
+.plantillas__ti{
+margin-top: 125px;
+}
+
+.recuadro {
+    background-color: #fff; /* Color de fondo del recuadro */
+    color: #000;            /* Color del texto */
+    padding: 5px 10px;     /* Espacio interno del recuadro */
+    border-radius: 5px;    /* Bordes redondeados */
+    text-align: center;      /* Texto centrado */
+    font-size: 14px;       /* Tamaño de la fuente */
+    margin-top: 5px;        /* Espacio entre la imagen y el recuadro */
+}
+
+/*javascript*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  
+  .modal-contenido {
+    margin: 5% auto; 
+    display: block;
+    width: 80%; 
+    max-width: 700px;
+  }
+  
+  .cerrar {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
 
 footer {
     text-align: center;
