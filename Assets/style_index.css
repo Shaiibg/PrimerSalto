@@ -134,8 +134,8 @@ body {
 
 /* Sección Recursos */
 .main__section--resources {
-    margin-top: 250px;
-    margin-bottom: 100px;
+    
+    margin: 150px 20px 100px 20px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
@@ -252,13 +252,12 @@ body {
 
 .main__divgeneral {
     display: flex;
-    margin-top: -30px; /* Usa valores negativos para moverlos hacia arriba */
+    margin-top: -40px; /* Usa valores negativos para moverlos hacia arriba */
     gap: 20px; /* Espacio entre las tarjetas */
 }
 
 .section__div--cambios {
     flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
-    margin: 10px; /* Espacio entre los cuadros */
     padding: 15px; /* Espaciado interno dentro de los cuadros */
     width: 30%; /* Ajusta el ancho de cada cuadro */
     min-width: 250px; /* Opcional: establece un ancho mínimo */
@@ -267,12 +266,12 @@ body {
 
 /* Sección Datos */
 .main__section--data {
-    background-color: #000; /* Fondo negro */
+    background-color: #282424; /* Fondo negro */
+    border-radius: 10px;
     color: #fff; /* Texto blanco */
-    border: 2px solid #fff; /* Borde blanco */
     text-align: center; /* Centrar texto */
     padding: 20px;
-    margin: 30px auto;
+    margin: 100px auto;
     max-width: 800px;
     box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
 }
@@ -298,12 +297,12 @@ body {
 
 /* Botones de la sección de datos */
 .div__button_data {
-    background-color: #782c8c;
-    color: #fff; /* Texto blanco */
-    border: 2px solid #fff; /* Borde blanco */
+    background-color: #a4bcd4;
+    color: #000; /* Texto blanco */
+    border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -314,9 +313,8 @@ body {
 }
 
 .div__button_data:hover {
-    background-color: #fff; /* Fondo blanco */
-    color: #000; /* Texto negro */
-}
+    background-color: #a19f9f;
+}   
 
 /* Links para asegurar que el botón se muestre correctamente */
 .main__div--datos a {
@@ -333,8 +331,9 @@ body {
 
 /* Sección de estadísticas */
 .statistics {
-    margin-top: 250px;
-    background-color: #000;
+    margin-top: 100px;
+    background-color: #282424;
+    border-radius: 10px;
     color: #fff;
     text-align: center;
     padding: 50px 20px;
@@ -364,7 +363,7 @@ body {
 .statistics__number {
     font-size: 3rem;
     font-weight: bold;
-    color: #FF0000; /* Rojo brillante */
+    color: #782c8c; /* Rojo brillante */
     display: block;
     margin-bottom: 10px;
 }
