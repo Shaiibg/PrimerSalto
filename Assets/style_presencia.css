@@ -1,0 +1,235 @@
+/*Header*/
+body {
+
+    margin: 0;
+    background-color: #181414;
+    color: #fff;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+.header {
+    background-color: #1A1A1D;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__logo--image {
+    height: 20px;
+    width: 40px;
+    margin-left: -17px;
+    padding: 10px;
+}
+
+.header__nav--item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header__nav--link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__nav--link:hover {
+    color: #A64D79;
+    transition: color 0.3s;
+}
+
+#toggle {
+    display: none;
+}
+
+#label_toggle {
+    font-size: 1.3em;
+}
+
+#label_toggle:hover {
+    color: #A64D79;
+    transition: color 0.3s;
+}
+/*Intro*/
+.container_intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .text-content_intro {
+    text-align: left; 
+  }
+  
+  .text-content_intro__title { /* Estilo para el h2 */
+    font-size: 3.5em; /* Ajusta el tamaño según tus necesidades */
+    margin-bottom: 10px; /* Ajusta el espacio entre el título y la descripción */
+  }
+  
+  .text-content_intro___description { /* Estilo para el p */
+    font-size: 1.3em; /* Ajusta el tamaño según tus necesidades */
+  }
+  
+  .image-content_intro{
+    width: 50%;
+    height: 10%;
+    object-fit: contain;
+  }
+
+  .imagenintro{
+    width: 1000px;
+    height: 100%;
+  }
+  
+  .intro{
+  background: linear-gradient(to left, #181414 80%, #322c8c 170%);
+  }
+
+  /*tablita del linkedin*/
+
+  .linkedin__tabla {
+    width: 100%; 
+    border-collapse: collapse; 
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgba(67, 46, 161, 0.3);
+    background-color: #181414;
+    margin-bottom: 100px;
+  }
+  
+  .linkedin__titulo {
+    text-align: left; 
+  }
+  
+
+  
+  .linkedin__detalle {
+    width: 50%;  
+    padding: 10px; 
+    border: 1px solid #ccc;
+    vertical-align: top;
+    background-color: #181414;
+  }
+
+
+  .linkedin__informacion{
+    border: 1px solid #ccc;
+  }
+  
+  /*Portafolio*/
+  .portafolio__titulo{
+    text-align: center;
+    color: #ffcc64;
+    font-size: 3em;
+    margin-bottom: -15px;
+  }
+
+  .portafolio__descripcion{
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  /*cajitas de lo de portafolio*/
+.portafolio__contenido {
+  overflow: hidden; 
+}
+
+.portafolio__seccion {
+  width: 20%;  
+  background-color: #292929;
+  border-radius: 20px; 
+  margin: 10px; 
+  float: left; 
+  padding: auto; 
+  flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
+  padding: 15px; /* Espaciado interno dentro de los cuadros */
+  width: 30%; /* Ajusta el ancho de cada cuadro */
+  min-width: 250px; /* Opcional: establece un ancho mínimo */
+  height: 380px; /* Permite que la altura se ajuste dinámicamente */
+}
+ 
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1A1A1D;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .main__section--ods {
+        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+    }
+
+    .header__container {
+        flex-wrap: wrap; /* Permitir que el header sea flexible */
+    }
+
+    .header__logo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__section--ods {
+        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+    }
+
+    .main__section--resources {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    .section__div {
+        height: auto; /* Dejar que el alto se ajuste automáticamente */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav--item {
+        padding: 5px; /* Reducir espaciado entre elementos del menú */
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 16px;
+    }
+
+    .header__nav {
+        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+    }
+
+    .section__div {
+        padding: 10px; /* Más compacto */
+    }
+
+    .div__button {
+        padding: 8px 12px; /* Reducir tamaño del botón */
+    }
+}
