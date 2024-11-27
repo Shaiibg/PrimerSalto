@@ -10,7 +10,7 @@ main{
 }
 /* Estilos generales */
 .header {
-    background-color: #1A1A1D;
+    background-color: #282424;
     color: #fff;
     padding: 0 20px 0 20px;
     
@@ -144,7 +144,7 @@ main{
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #1A1A1D;
+    background-color: #282424;
     color: #fff;
 }
 
