@@ -1,0 +1,261 @@
+body {
+
+    margin: 0;
+    background-color: #181414;
+    color: #fff;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+.header {
+    background-color: #1A1A1D;
+    color: #fff;
+    padding: 0 20px 0 20px;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__logo--image {
+    height: 20px;
+    width: 40px;
+    margin-left: -17px;
+    padding: 10px;
+}
+
+.header__nav--item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header__nav--link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__nav--link:hover {
+    color: #A64D79;
+    transition: color 0.3s;
+}
+
+#toggle {
+    display: none;
+}
+
+#label_toggle {
+    font-size: 1.3em;
+}
+
+#label_toggle:hover {
+    color: #A64D79;
+    transition: color 0.3s;
+}
+
+/*intro*/
+.intro_descripcion{
+    text-align: left;
+    margin-bottom: 125px;
+}
+
+.intro_descripcion h2{
+    font-size: 3em;
+    margin-bottom: -20px;
+}
+
+.intro_descripcion p{
+    font-size: 1.3em;
+}
+
+/*como leer una oferta*/
+.como_leer_oferta_intro{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.como_leer_oferta_intro h3{
+    margin-bottom: -20px;
+}
+
+/*Contenedores*/
+.contenedores{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px; 
+    justify-content: center;
+    
+}
+.contenedor{
+    width: 20%;  
+    background-color: #292929;
+    border-radius: 20px; 
+    margin: 10px; 
+    float: left; 
+    padding: auto; 
+    flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
+    padding: 15px; /* Espaciado interno dentro de los cuadros */
+    width: 30%; /* Ajusta el ancho de cada cuadro */
+    min-width: 250px; /* Opcional: establece un ancho mínimo */
+    height: 450px; /* Permite que la altura se ajuste dinámicamente */
+}
+
+.contenedor__item{
+margin-bottom: 20px;
+}
+
+.como_leer_oferta{
+    margin-bottom: 120px;
+}
+
+/*Tablita*/
+.tabla {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    table-layout: fixed
+  }
+  
+  .tabla__encabezado {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255); /* Borde negro */
+  }
+  
+  .tabla__fila {
+    border: 2px solid rgb(255, 255, 255); /* Borde negro para las filas */
+  }
+  
+  .tabla__celda {
+    padding: 20px; 
+    border: 1px solid rgb(255, 255, 255); /* Borde negro para las celdas */
+    text-align: left;
+    flex-direction: column; /* Alinea los elementos en fila */
+    height: 200px;
+    justify-content: space-between;
+
+  }
+  
+  .boton {
+    display: inline-block; /* Asegura que el botón se comporte como un bloque */
+    background-color: #000000; /* Color verde elegante */
+    color: white; /* Color del texto */
+    padding: 12px 24px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes más redondeados */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Hace que el texto sea más llamativo */
+    text-decoration: none; /* Elimina el subrayado si el botón es un enlace */
+    text-align: center; /* Centra el texto dentro del botón */
+    transition: background-color 0.3s ease; /* Animación de transición */
+    margin-top: 10px; /* Espacio arriba del botón */
+  }
+  
+  .boton:hover {
+    background-color: #3739b4; /* Color más oscuro en hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1A1A1D;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .main__section--ods {
+        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+    }
+
+    .header__container {
+        flex-wrap: wrap; /* Permitir que el header sea flexible */
+    }
+
+    .header__logo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__section--ods {
+        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+    }
+
+    .main__section--resources {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    .section__div {
+        height: auto; /* Dejar que el alto se ajuste automáticamente */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav--item {
+        padding: 5px; /* Reducir espaciado entre elementos del menú */
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 16px;
+    }
+
+    .header__nav {
+        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+    }
+
+    .section__div {
+        padding: 10px; /* Más compacto */
+    }
+
+    .div__button {
+        padding: 8px 12px; /* Reducir tamaño del botón */
+    }
+}
