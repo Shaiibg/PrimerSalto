@@ -105,18 +105,19 @@ main{
 }
 
 .carrera__vacante {
-    flex: 0 0 auto; /* Desactiva el crecimiento automático */
-    width: 200px; /* Establece un ancho fijo para los cuadros */
+     flex: 0 0 auto; /* Evita el crecimiento automático */
+    width: 200px; /* Ancho fijo */
     border-radius: 10px;
     background-color: #282424;
     color: #fff;
     padding: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    justify-content: space-between; /* Mantén espacio entre elementos */
+    height: 500px; /* Altura fija */
     margin: 20px;
     align-items: center;
+    position: relative;
 }
 
 .carrera__subtitulo{
@@ -125,9 +126,6 @@ main{
     color: #67cfddb8;
 }
 
-.carrera__vacante-lista{
-    list-style-type: none;
-}
 
 .carrera__vacante-boton{
     background-color: #67cfddb8;

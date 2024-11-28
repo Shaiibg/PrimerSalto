@@ -92,7 +92,8 @@ main{
     flex-wrap: wrap; 
     gap: 20px;
     /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);*/
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    background-color: #282424;
+    border-radius: 10px;
     margin-bottom: 120px;
 }
 
@@ -113,7 +114,8 @@ main{
 
 .respuestas{
     /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);*/
-    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.5);
+    background-color: #282424;
+    border-radius: 10px;
     margin-top: 20px;
 
 }
@@ -136,6 +138,7 @@ main{
 .respuestas__item{
     width: 20%;  
     background-color: #292929;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px; 
     margin: 10px; 
     float: left; 
@@ -145,7 +148,9 @@ main{
     width: 30%; /* Ajusta el ancho de cada cuadro */
     min-width: 250px; /* Opcional: establece un ancho mínimo */
     height: 450px; /* Permite que la altura se ajuste dinámicamente */
-
+}
+#pregunta{
+    height: auto;
 }
 
 footer {
