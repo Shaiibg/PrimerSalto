@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000;
+    background-color: #181414;
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
@@ -79,16 +79,21 @@ main{
 }
 
 .preguntas__introduccion{
-    text-align: center;
+    text-align: left;
+    margin-bottom: 100px;
 }
 
+.preguntas__titulo{
+    font-size: 3em;
+    margin-bottom: -20px;
+}
 .preguntas__contenedor{
     display: flex;
-    margin-top: 20px;
     flex-wrap: wrap; 
     gap: 20px;
     /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);*/
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    margin-bottom: 120px;
 }
 
 .preguntas__frecuentes{
@@ -129,15 +134,17 @@ main{
     
 }
 .respuestas__item{
-    border: 1px solid #ffffff;
-    border-radius: 40px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    text-align: center;
-    width: 100%;
-    max-width: 200px; /* Ajusta el tamaño para pantallas pequeñas */
+    width: 20%;  
+    background-color: #292929;
+    border-radius: 20px; 
+    margin: 10px; 
+    float: left; 
+    padding: auto; 
+    flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
+    padding: 15px; /* Espaciado interno dentro de los cuadros */
+    width: 30%; /* Ajusta el ancho de cada cuadro */
+    min-width: 250px; /* Opcional: establece un ancho mínimo */
+    height: 450px; /* Permite que la altura se ajuste dinámicamente */
 
 }
 
