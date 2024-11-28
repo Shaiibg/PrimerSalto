@@ -1,81 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías</title>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style_guias.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="keywords" content=""><!--Palabras clave de la pagina para mejorar el posicionamiento-->
+        <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
+        <title>Guias</title>
+    </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                Luky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo-image">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav--link">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
-                    <li class="header__nav-item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
-                    <li class="header__nav-item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
                 </ul>
             </nav>
-            <button>Modo oscuro</button>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
         </div>
-    </header> 
-
-    <div>
+    </header>
+    <section class="intro">
+    <div class="intro_descripcion">
         <h2>Desglosa y Entiende las Ofertas Laborales</h2>
         <p>Aprende a identificar los requisitos clave, entender los términos comunes y analizar si una oferta es adecuada para ti.</p>
     </div>
+    </section>
 
-    <div>
-        <div>
+    <section class="como_leer_oferta">
+        <div class="como_leer_oferta_intro">
             <h3>¿Cómo Leer una Oferta?</h3>
             <p>Aprende a identificar los requisitos clave, entender los términos comunes y analizar si una oferta es adecuada para ti.</p>
         </div>
-        <div>
-            <h3>Términos comunes en ofertas de TI</h3>
-            <p>Lista de terminos y su significado</p>
-        </div>
-        <div>
-            <h3>Indicadores de ofertas confiables y alertas sobre posibles fraudes</h3>
-            <p>Lista de terminos y su significado</p>
-        </div>
-    </div>
+        <div class="contenedores">
+            <div class="contenedor">
+              <h3>Términos comunes en ofertas de TI</h3>
+              <ul class="contenedor__lista">
+                <li class="contenedor__item"><b>FTE (Full-Time Equivalent):</b>  Se refiere a un puesto de trabajo a tiempo completo.</li>
+                <li class="contenedor__item"><b>Salario bruto/neto:</b> El salario bruto es el total antes de impuestos y deducciones, mientras que el neto es lo que realmente recibes.</li>
+                <li class="contenedor__item"><b>Beneficios:</b>  Pueden incluir seguro médico, dental, de vida, plan de pensiones, etc.</li>
+                <li class="contenedor__item"><b>Periodo de prueba:</b> Un tiempo inicial donde la empresa evalúa tu desempeño y tú puedes evaluar si el trabajo te conviene.</li>
+                <li class="contenedor__item"><b>Contrato indefinido/temporal:</b>  Indica la duración del contrato laboral.</li>
+                <li class="contenedor__item"><b>Modalidad de trabajo:</b> Presencial, remoto o híbrido.</li>
+                <li class="contenedor__item"><b>Stack tecnológico:</b>  Conjunto de tecnologías que utiliza la empresa (lenguajes de programación, frameworks, bases de datos, etc.).</li>
+              </ul>
+            </div>
+            <div class="contenedor">
+              <h3>Indicadores de ofertas confiables y alertas sobre posibles fraudes</h3>
+              <ul class="contenedor__lista">
+                <li class="contenedor__item"><b>Información clara y detallada:</b> La oferta debe especificar claramente el puesto, responsabilidades, requisitos y condiciones.</li>
+                <li class="contenedor__item"><b>Proceso de selección transparente:</b>  Debe haber un proceso de entrevistas y evaluaciones definido.</li>
+                <li class="contenedor__item"><b>Comunicación profesional:</b> La empresa debe comunicarse de forma profesional y a través de canales oficiales.</li>
+                <li class="contenedor__item"><b>Cuidado con ofertas demasiado buenas para ser verdad:</b> Desconfía de salarios excesivamente altos o promesas poco realistas.</li>
+                <li class="contenedor__item"><b>No proporciones información personal sensible:</b>  No compartas datos bancarios o de tarjetas de crédito en etapas iniciales del proceso.</li>
+                <li class="contenedor__item"><b>Investiga a la empresa:</b> Busca información sobre la empresa en internet y verifica su reputación.</li>
+              </ul>
+            </div>
+          </div>
+    </section>
     <div>
-        <table>
+        <table class="tabla">
             <thead>
-                <tr>
-                    <th colspan="2">
-                        <h2>Postúlate como un Profesional</h2>
-                        <p>Sigue estos pasos claros y organizados para enviar una aplicación completa y destacada</p>
-                    </th>
-                </tr>
+              <tr>
+                <th colspan="2" class="tabla__encabezado">
+                  <h2>Postúlate como un Profesional</h2>
+                  <p>Sigue estos pasos claros y organizados para enviar una aplicación completa y destacada</p>
+                </th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Adapta tu currículum y carta de presentación a cada oferta laboral para destacar entre los candidatos. 
-                        Resalta las habilidades y experiencias más relevantes según los requisitos del puesto.
-                    <a href=""><button>Plantillas y creacion de curriculum</button></a></td>
-                    <td>Uso de plataformas de empleo y redes profesionales (como LinkedIn o Indeed).
-                        <a href=""><button>Potencia tu perfin en linkedin</button></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p>Pasos:</p>
-                    <ol>
-                        <li>Leer la oferta</li>
-                        <li>Adaptar tu CV</li>
-                        <li>Redactar un correo o completar el formulario</li>
-                        <li>Enviar la aplicación</li>
-                    </ol>
-                    </td>
-                </tr>
+              <tr class="tabla__fila">
+                <td class="tabla__celda">
+                    <div class="descripciones_celda">
+                        <h2> Adapta tu currículum y carta de presentación a cada oferta laboral para destacar entre los candidatos.</h2>
+                      <p> 
+                        Personaliza cada detalle resaltando tus habilidades y experiencias más relevantes según los requisitos del puesto. 
+                        Asegúrate de utilizar palabras clave específicas de la oferta para pasar filtros automáticos y captar la atención del reclutador.
+                      </p>
+                      <p>
+                        Si no tienes experiencia previa en el puesto, enfócate en tus competencias transferibles, como habilidades de comunicación, 
+                        manejo del tiempo o trabajo en equipo. También es útil incluir logros medibles que respalden tus capacidades y demostrar
+                        cómo puedes aportar valor a la empresa.
+                      </p>
+                    </div>
+                    <p><a href="curriculum.html"><button class="boton">Plantillas y creación de currículum</button></a></p>
+                  </td>
+                  
+                  <td class="tabla__celda">
+                    <div class="descripciones_celda">
+                        <h2>Aprovecha plataformas de empleo y redes profesionales para ampliar tus oportunidades laborales.</h2>
+                      <p> 
+                        LinkedIn, por ejemplo, es esencial para establecer contactos y mostrar tus logros profesionales. 
+                        Mantén tu perfil actualizado con una fotografía profesional, una descripción clara de tu experiencia y habilidades clave.
+                      </p>
+                      <p>
+                        Participa activamente en estas redes compartiendo contenido relacionado con tu campo, comentando publicaciones de otros
+                        y solicitando recomendaciones de colegas o supervisores. En plataformas como Indeed, ajusta tus alertas para recibir 
+                        ofertas que coincidan con tus intereses y postúlate rápidamente.
+                      </p>
+                    </div>
+                    <p><a href="presencia.html"><button class="boton">Potencia tu perfil en LinkedIn</button></a></p>
+                  </td>
+              </tr>
             </tbody>
-        </table>
-        
+          </table>
     </div>
+    <footer>
+        <p>&copy; 2024 Lucky. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
