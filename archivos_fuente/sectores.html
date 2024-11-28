@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sectores</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style_sectores.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <meta name="keywords" content=""><!--Palabras clave de la pagina para mejorar el posicionamiento-->
+        <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
+        <title>Sectores</title>
+    </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../Assets/main.js"></script>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                Luky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo-image">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav--link">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
-                    <li class="header__nav-item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
-                    <li class="header__nav-item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="#contacto" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
                 </ul>
             </nav>
-            <button>Modo oscuro</button>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
         </div>
     </header>
-
     <main>
        
         <section class="sectores">
-            <div>
+            <div class="sectores_intro">
                 <h2 class="sectores__titulo">Explora los Sectores Más Demandados en Tecnología</h2>
                 <p class="sectores__descripcion">Conoce las áreas clave del sector TI, sus principales roles, habilidades necesarias y las oportunidades de crecimiento que ofrecen. Encuentra el sector ideal para tu perfil profesional.</p>
             </div>
@@ -38,96 +45,232 @@
 
         
             <div class="sectores__graficos">
-                <p>Gráficos comparativos mostrando los sectores más demandados y las tendencias de crecimiento en tecnología (En México).</p>
-                <div class="graficos__imagenes">
-                    <a href="imagen1.jpg" download>
-                        <img src="imagen1.jpg" alt="Gráfico 1" class="graficos__imagen">
-                    </a>
-                    <a href="imagen2.jpg" download>
-                        <img src="imagen2.jpg" alt="Gráfico 2" class="graficos__imagen">
-                    </a>
-                </div>
-            </div>
-        </section>
+                <strong>Gráficos de ofertas de trabajo en Mexico</strong>
+        
 
+                <div class="Graficas_trabajos">
+                    <canvas id="myChart"></canvas>
+                    <canvas id="myChart2"></canvas>
+                </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Cdmx', 'Nuevo leon', 'Jalisco', 'Queretaro','Edomex', 'Sinaloa','Coahuila'],
+                        datasets: [{
+                          label: 'Porcentaje de ofertas de trabajo',
+                          data: [57.7, 10.5, 9.3, 9,2.6,2.1,1.7], backgroundColor:
+                          ['rgba(144, 238, 144, 1)', 'rgba(255, 105, 180, 1)', 'rgba(255, 165, 0, 1)', 'rgba(138, 43, 226, 1)', 'rgba(30, 144, 255, 1)', 'rgba(238, 130, 238, 1)', 'rgba(255, 255, 0, 1)'],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                            x: {
+                            ticks: {
+                                color: 'white' // Cambia el color de las etiquetas del eje X a blanco
+                            }
+                        },
+
+                          y: {
+                            ticks: {
+                            color: 'white' // Cambia el color de las etiquetas del eje Y a blanco
+                            },
+                            beginAtZero: true
+                          }
+                          
+                        }
+                      }
+                    });
+                  </script>
+
+                    <script>
+                        const ctx2 = document.getElementById('myChart2');
+                    
+                        new Chart(ctx2, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Consultor/a TIC', 'Desarrollador/a de Software', 'Analista de Datos / BI', 'Profesional Técnico TIC'],
+                            datasets: [{
+                            label: 'Ofertas de trabajo',
+                            data: [2663, 1420, 1081, 816], backgroundColor:
+                            ['rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+                            borderWidth: 1
+                            }]
+                        },
+                        options: {
+                        scales: {
+                            x: {
+                            ticks: {
+                                color: 'white' // Cambia el color de las etiquetas del eje X a blanco
+                            }
+                        },
+
+                          y: {
+                            ticks: {
+                            color: 'white' // Cambia el color de las etiquetas del eje Y a blanco
+                            },
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                    </script>
+                  </div>
+        </section>
       
         <section class="desarrollo-software">
             <div class="desarrollo-software__introduccion">
                 <h2>Desarrollo de Software</h2>
-                <h3>Crea Soluciones que Transforman el Mundo</h3>
-                <p>El desarrollo de software es el corazón del sector TI, abarcando la creación de aplicaciones, sistemas y herramientas digitales.</p>
+                <div class="container_intro">
+                    <div class="text-content_intro">
+                      <h2 class="text-content_intro__title">Crea Soluciones que Transforman el Mundo</h2>
+                      <p class="text-content_intro___description">El desarrollo de software es la fuerza impulsora detrás de la revolución digital que estamos viviendo.</p>
+                    </div>
+                    <div class="image-content_intro">
+                      <img class="imagenintro" src="https://res.cloudinary.com/highereducation/images/f_auto,q_auto/v1694627620/CyberDegrees.org/typical-day-of-security-software-developer/typical-day-of-security-software-developer.jpg?_i=AA" alt="Imagen"> 
+                    </div>
+                  </div>
             </div>
 
-            <div>
-                <img src="imagen1.jpg" alt="Desarrollo de software" class="desarrollo__imagen">
+            <div class="contenedor-principal"> 
+                <article class="habilidades-clave">
+                    <h2 class="habilidades-clave_titulo">Habilidades clave</h2>
+                    <h3>Lenguajes como Python, Java, JavaScript:</h3> 
+                    <p>
+                      Dominar lenguajes de programación es fundamental. Cada uno tiene fortalezas y aplicaciones específicas:
+                      <ul>
+                        <li><strong>Python:</strong>  Conocido por su sintaxis clara, es ideal para análisis de datos, IA y desarrollo web back-end.</li>
+                        <li><strong>Java:</strong> Un lenguaje robusto, se utiliza en desarrollo de aplicaciones empresariales, Android y big data.</li>
+                        <li><strong>JavaScript:</strong> Esencial para el desarrollo web front-end, crea interfaces interactivas. También se usa en back-end (Node.js) y desarrollo móvil.</li>
+                      </ul>
+                      Comprender las particularidades de cada lenguaje permite construir soluciones eficientes.
+                    </p>
+                
+                    <h3>Uso de frameworks (React, Django, etc.)</h3> 
+                    <p>
+                      Los frameworks proporcionan estructuras predefinidas, agilizando el desarrollo y promoviendo la creación de aplicaciones robustas. 
+                      Algunos ejemplos populares incluyen:
+                      <ul>
+                        <li><strong>React:</strong> Framework de JavaScript para interfaces de usuario interactivas con componentes reutilizables.</li>
+                        <li><strong>Django:</strong> Framework de Python que facilita el desarrollo web back-end, con herramientas para bases de datos, autenticación y APIs.</li>
+                        <li><strong>Angular:</strong> Framework de JavaScript para aplicaciones web complejas con arquitectura MVC.</li>
+                      </ul>
+                      El uso de frameworks permite a los desarrolladores centrarse en la lógica de la aplicación, aumentando la productividad.
+                    </p>
+                
+                    <h3>Metodologías ágiles:</h3> 
+                    <p>
+                      Las metodologías ágiles, como Scrum y Kanban, son enfoques modernos para la gestión de proyectos que priorizan la colaboración, la flexibilidad y la entrega continua de valor.<p>En contraste con las metodologías tradicionales, que se basan en planes rígidos, las metodologías ágiles se adaptan a los cambios y fomentan la iteración constante. Esto permite responder a las necesidades del cliente y entregar software de alta calidad. Las metodologías ágiles promueven la comunicación, la transparencia y la mejora continua, resultando en un proceso de desarrollo más eficiente.
+                    </p>
+                </article>
+            
+                <aside class="roles-comunes_desarrollo">
+                    <h4 class="rolesComunesTitulo">Roles comunes</h4>
+                    <ul>
+                        <li class="rol_item">Desarrollador Frontend, Backend, Full Stack.</li>
+                        <li class="rol_item">Ingeniero de Software.</li>
+                        <li class="rol_item">Tester de QA.</li>
+                        <li class="rol_item">Arquitecto de Software.</li>
+                        <li class="rol_item">Analista de Sistemas.</li>
+                        <li class="rol_item">Scrum Master.</li>
+                    </ul>
+                </aside>
             </div>
-
-            <aside class="roles-comunes">
-                <h4>Roles comunes</h4>
-                <ul>
-                    <li>Desarrollador Frontend, Backend, Full Stack.</li>
-                    <li>Ingeniero de Software.</li>
-                    <li>Tester de QA.</li>
-                </ul>
-            </aside>
-
-            <article class="habilidades-clave">
-                <h4>Habilidades clave</h4>
-                <ul>
-                    <li>
-                        <strong>Lenguajes como Python, Java, JavaScript:</strong> 
-                        Herramientas fundamentales para desarrollar aplicaciones y sistemas. Cada lenguaje tiene su propósito, desde la creación de interfaces dinámicas hasta soluciones complejas en inteligencia artificial.
-                    </li>
-                    <li>
-                        <strong>Uso de frameworks (React, Django, etc.):</strong>
-                        Los frameworks agilizan el desarrollo, proporcionando estructuras predefinidas para construir aplicaciones robustas y escalables.
-                    </li>
-                    <li>
-                        <strong>Metodologías ágiles:</strong>
-                        Formas modernas de gestionar proyectos tecnológicos, enfocadas en la colaboración, flexibilidad y entrega continua de valor.
-                    </li>
-                </ul>
-            </article>
         </section>
 
-        <section class="ciencia-datos">
-            <div class="ciencia-datos__introduccion">
-                <h2>Ciencia de Datos</h2>
-                <h3>Transforma Datos en Decisiones</h3>
-                <p>La ciencia de datos combina estadística, programación y análisis para interpretar grandes volúmenes de información y generar valor estratégico.</p>
+        <section class="analisis-datos">
+            <div class="analisis-datos__introduccion">
+                <h2>Ciencia de datos</h2>
+                <div class="container_intro">
+                    <div class="text-content_intro">
+                      <h2 class="text-content_intro__title">Transforma Datos en Decisiones</h2>
+                      <p class="text-content_intro___description">La ciencia de datos combina estadística, programación y análisis para interpretar grandes volúmenes de información y generar valor estratégico.
+                    </p>
+                    </div>
+                    <div class="image-content_intro">
+                      <img class="imagenintro" src="https://www.datacentermarket.es/wp-content/uploads/2022/11/71884_20.jpg" alt="Imagen"> 
+                    </div>
+                  </div>
             </div>
 
-            <div>
-                <img src="imagen1.jpg" alt="Ciencia de Datos" class="ciencia__imagen">
+            <div class="contenedor-principal"> 
+                <article class="habilidades-clave">
+                    <h2 class="habilidades-clave_titulo">Habilidades clave</h2>
+                    
+                    <h3>Programación en Python, R, SQL</h3>
+                    <p>
+                        El dominio de <strong>Python, R y SQL</strong> es fundamental en el ámbito de la ciencia de datos. Estas habilidades permiten abordar diversas tareas como:
+                    </p>
+                    <ul>
+                        <li><strong>Python:</strong> Usado para machine learning, automatización de procesos y visualización de datos.</li>
+                        <li><strong>R:</strong> Especializado en análisis estadístico y generación de informes detallados.</li>
+                        <li><strong>SQL:</strong> Facilita la extracción, manipulación y administración de datos en bases de datos relacionales.</li>
+                    </ul>
+                    <p>
+                        Estas herramientas son clave para trabajar con datos masivos y transformar información en conocimientos accionables.
+                    </p>
+                    
+                    <h3>Uso de frameworks (React, Django, etc.)</h3>
+                    <p>
+                        La experiencia en frameworks como <strong>React</strong> y <strong>Django</strong> permite la creación de aplicaciones completas, desde interfaces de usuario intuitivas hasta sistemas backend robustos. 
+                    </p>
+                    <p>
+                        Algunas aplicaciones prácticas incluyen:
+                    </p>
+                    <ol>
+                        <li><strong>React:</strong> Desarrollo de interfaces dinámicas para visualizar datos en tiempo real.</li>
+                        <li><strong>Django:</strong> Creación de plataformas escalables para procesamiento y análisis de datos.</li>
+                    </ol>
+                    <p>
+                        El uso combinado de estos frameworks acelera el desarrollo y mejora la calidad de los proyectos.
+                    </p>
+                    
+                    <h3>Metodologías ágiles</h3>
+                    <p>
+                        Las <strong>metodologías ágiles</strong> son esenciales para gestionar proyectos complejos en equipos multidisciplinarios. Estas incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Scrum:</strong> Planificación de sprints cortos para mantener un progreso constante.</li>
+                        <li><strong>Kanban:</strong> Visualización del flujo de trabajo para identificar cuellos de botella.</li>
+                    </ul>
+                    <p>
+                        Al implementar estas metodologías, se mejora la <em>colaboración entre equipos</em>, se optimiza el tiempo de desarrollo y se asegura la entrega continua de valor al cliente.
+                    </p>
+                    
+                    <p>
+                        Estas habilidades son esenciales para cualquier profesional que desee destacarse en el área de la ciencia de datos y enfrentar los retos del mercado laboral moderno.
+                    </p>
+                </article>
+                
+                
+            
+                <aside class="roles-comunes_desarrollo">
+                    <h4 class="rolesComunesTitulo">Roles comunes</h4>
+                    <ul>
+                        <li class="rol_item">Científico de datos </li>
+                        <li class="rol_item">Analista de datos.</li>
+                        <li class="rol_item">Ingeniero de datos.</li>
+                        <li class="rol_item">Ingeniero de aprendizaje automático </li>
+                        <li class="rol_item">Científico de datos de investigación</li>
+                        <li class="rol_item">Científico de datos de IA</li>
+                    </ul>
+                </aside>
             </div>
-
-            <aside class="roles-comunes">
-                <h4>Roles comunes</h4>
-                <ul>
-                    <li>Científico de Datos.</li>
-                    <li>Analista de Datos.</li>
-                    <li>Ingeniero de Machine Learning.</li>
-                </ul>
-            </aside>
-
-            <article class="habilidades-clave">
-                <h4>Habilidades clave</h4>
-                <ul>
-                    <li>
-                        <strong>Programación en Python, R, SQL:</strong> 
-                        Lenguajes esenciales para manipular datos, crear modelos y extraer información clave de grandes volúmenes de datos.
-                    </li>
-                    <li>
-                        <strong>Conocimientos en estadística y análisis predictivo:</strong>
-                        Habilidades para interpretar datos, identificar patrones y anticipar tendencias que apoyen la toma de decisiones estratégicas.
-                    </li>
-                    <li>
-                        <strong>Herramientas como Tableau y Power BI</strong>
-                        Plataformas poderosas para visualizar datos de forma clara y efectiva, facilitando la comunicación de insights a equipos y líderes.
-                    </li>
-                </ul>
-            </article>
         </section>
+
+        
     </main>
+    <footer>
+        <p>&copy; 2024 Lucky. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../Assets/main.js"></script>
 </body>
 </html>
