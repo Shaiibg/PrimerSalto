@@ -84,8 +84,13 @@ main{
 }
 
 .preguntas__titulo{
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: -20px;
+    color: #A4D177;
+}
+.preguntas__titulo--color{
+    font-weight: bold;
+    font-size: 2em;
 }
 .preguntas__contenedor{
     display: flex;
@@ -103,6 +108,10 @@ main{
     max-width: 300px;
     flex: 1;
 
+}
+
+.preguntas__pregunta{
+    color: #A64D79;
 }
 
 .preguntas__lista{
@@ -126,6 +135,10 @@ main{
     max-width: 800px;
 }
 
+.respuestas__titulo{
+    color: #A4D177;
+}
+
 .respuestas__lista{
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +147,10 @@ main{
     padding: 10px; 
     justify-content: center;
     
+}
+
+.respuestas__pregunta{
+    color: #A64D79;
 }
 .respuestas__item{
     width: 20%;  
