@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: linear-gradient(to right, #000, #283186); 
+    background-image: url(../imagenes/fondo-oscuro.jpg);
     color: #fff;
     font-family: 'Century Gothic', Arial, sans-serif;
 }
@@ -73,17 +73,21 @@ main{
 .plantillas__titulo{
 font-size: 3em;
 margin-bottom: -15px;
+padding: 10px;
+border-radius: 10px;
+color: #ffcc64;
 }
 
 .plantillas__descripcion{
-font-size: 1.4em;
+font-size: 1.2em;
 }
 
 
 .plantillas__introduccion{
-    /*border: 1px solid #fff;*/
     width: 50%;
     padding: 10px;
+    background-color: #1A1A1D;
+    
 }
 
 .plantillas__contenido{
@@ -95,8 +99,15 @@ font-size: 1.4em;
     text-align: center;
 }
 
+.plantillas__sub{
+    color: #c8b4d4;
+    font-weight: bold;
+    font-size: 2em;
+}
+
 .plantillas__imagenes{
-    background-color: #000000;
+    background-color: #1A1A1D;
+    padding: 20px;
     border-radius: 10px;
     display: flex; 
     justify-content: center; 
@@ -123,6 +134,8 @@ font-size: 1.4em;
     width: 100%; 
     border-collapse: collapse; 
     color: #fff; 
+    background-color: #1A1A1D;
+    padding: 10px;
 }
 
 .redaccion__item {
