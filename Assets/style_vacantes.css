@@ -102,24 +102,24 @@ main{
     border-radius: 5px;
 }
 
-/* Estilos del menú desplegable */
+
 .header__nav--dropdown:hover .dropdown__menu {
     display: block;
 }
 
 .dropdown__menu {
-    display: none; /* Inicialmente está oculto */
+    display: none; 
     position: absolute;
-    top: 100%; /* Alinea el submenú debajo del item */
+    top: 100%; 
     left: 0;
     background-color: #333;
     color: white;
     padding: 10px;
-    width: 450px; /* Puedes ajustar el ancho del submenú */
+    width: 450px; 
     height: 150px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+    z-index: 100; 
 }
 
 .dropdown__menu p {
@@ -128,7 +128,7 @@ main{
     font-size: 14px;
 }
 
-/* Estilo para los enlaces en el submenú (opcional) */
+
 .dropdown__menu a {
     color: white;
     text-decoration: none;
@@ -177,16 +177,16 @@ main{
 }
 
 .carrera__vacante {
-     flex: 0 0 auto; /* Evita el crecimiento automático */
-    width: 200px; /* Ancho fijo */
+     flex: 0 0 auto; 
+    width: 200px; 
     border-radius: 10px;
     background-color: #282424;
     color: #fff;
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Alinea elementos verticalmente */
-    justify-content: space-between; /* Mantén espacio entre elementos */
-    height: 500px; /* Altura fija */
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 500px; 
     margin: 20px;
     align-items: center;
     position: relative;
@@ -251,14 +251,14 @@ footer {
     color: #fff;
 }
 
-/* Ajustes generales para pantallas pequeñas */
+
 @media (max-width: 768px) {
-    /* Elimina márgenes generales */
+
     main {
         margin: 5px;
     }
 
-    /* Estilo responsivo para el header */
+
     .header__nav {
         flex-direction: column;
         gap: 10px;
@@ -279,35 +279,35 @@ footer {
         padding: 5px;
     }
 
-    /* Ajusta las introducciones */
+
     .carrera__introduccion {
-        width: 100%; /* Ocupa el ancho completo de la pantalla */
+        width: 100%; 
     }
 
-    /* Flexibilidad en las vacantes */
+
     .carrera__vacantes {
         flex-direction: column;
         align-items: center;
     }
 
     .carrera__vacante {
-        width: 90%; /* Haz que las tarjetas ocupen casi todo el ancho */
+        width: 90%; 
         margin: 10px 0;
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        height: auto; 
     }
 
-    /* Ajusta texto */
+ 
     .carrera__subtitulo {
         font-size: 18px;
     }
 
     .carrera__vacante-boton {
-        padding: 10px 15px; /* Reduce el tamaño de los botones */
+        padding: 10px 15px; 
         font-size: 14px;
     }
 }
 
-/* Ajustes específicos para pantallas muy pequeñas (teléfonos) */
+
 @media (max-width: 480px) {
     .header__logo {
         font-size: 16px;
@@ -333,19 +333,19 @@ footer {
     }
 }
 
-/* Ajustes específicos para pantallas medianas */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .carrera__vacantes {
-        justify-content: center; /* Centra las tarjetas */
+        justify-content: center; 
         gap: 15px;
     }
 
     .carrera__vacante {
-        width: 45%; /* Ocupa dos tarjetas por fila */
+        width: 45%; 
         height: auto;
     }
 
     .carrera__introduccion {
-        width: 80%; /* Reduce un poco el ancho */
+        width: 80%; 
     }
 }
