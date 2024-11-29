@@ -57,18 +57,6 @@ main{
     color: #A64D79;
     transition: color 0.3s;
 }
-#toggle {
-    display: none;
-}
-
-#label_toggle {
-    font-size: 1.3em;
-}
-
-#label_toggle:hover {
-    color: #A64D79;
-    transition: color 0.3s;
-}
 
 .plantillas__titulo{
 font-size: 3em;

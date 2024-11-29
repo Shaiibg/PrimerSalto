@@ -65,19 +65,6 @@ main{
     transition: color 0.3s;
 }
 
-#toggle {
-    display: none;
-}
-
-#label_toggle {
-    font-size: 1.3em;
-}
-
-#label_toggle:hover {
-    color: #A64D79;
-    transition: color 0.3s;
-}
-
 .preguntas__introduccion{
     text-align: left;
     margin-bottom: 100px;
@@ -111,7 +98,7 @@ main{
 }
 
 .preguntas__pregunta{
-    color: #A64D79;
+    color: #c4a57f;
 }
 
 .preguntas__lista{
@@ -150,7 +137,7 @@ main{
 }
 
 .respuestas__pregunta{
-    color: #A64D79;
+    color: #c4a57f;
 }
 .respuestas__item{
     width: 20%;  

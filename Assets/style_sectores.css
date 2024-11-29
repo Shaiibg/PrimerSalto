@@ -59,19 +59,6 @@ main{
     transition: color 0.3s;
 }
 
-#toggle {
-    display: none;
-}
-
-#label_toggle {
-    font-size: 1.3em;
-}
-
-#label_toggle:hover {
-    color: #A64D79;
-    transition: color 0.3s;
-}
-
 /*Intro*/
 .sectores_intro{
 margin-bottom: 100px;
