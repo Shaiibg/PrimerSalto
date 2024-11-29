@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY; // Obtiene la posición del scroll
+            const zoomLevel = 100 + scrollPosition * 0.1; // Ajusta el factor de zoom
+            document.body.style.backgroundSize = `${zoomLevel}% auto`;
+        });
+    </script>
     <!--Se ocupará la metodologia BEM para css (Block, Element, Modifier)-->
     <header class="header">
         <div class="header__container">
@@ -30,11 +37,7 @@
     </header> 
 
     <main class="main" id="inicio">
-        <!--        <h1 class="main__tittle" id="inicio">Primer Salto</h1>
--->
         <section class="main__section--ods">
-            <img src="../Imagenes/Getting-a-Job-as-a-Software-Engineer.jpg" alt="Imagen de fondo" class="background-img">  -->
-            <div class="ods__container--background">
                 <div class="ods__container--content">
                     <h1 class="ods__tittle">Primer Salto</h1>
                     <p class="ods__paragraph">
@@ -121,3 +124,4 @@
     </footer>
 </body>
 </html>
+
