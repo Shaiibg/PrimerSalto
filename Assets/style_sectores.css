@@ -59,7 +59,6 @@ main{
     transition: color 0.3s;
 }
 
-/* Estilos generales del header */
 .header {
     background-color: #282424;
     color: white;
@@ -101,24 +100,23 @@ main{
     border-radius: 5px;
 }
 
-/* Estilos del menú desplegable */
 .header__nav--dropdown:hover .dropdown__menu {
     display: block;
 }
 
 .dropdown__menu {
-    display: none; /* Inicialmente está oculto */
+    display: none; 
     position: absolute;
-    top: 100%; /* Alinea el submenú debajo del item */
+    top: 100%;
     left: 0;
     background-color: #333;
     color: white;
     padding: 10px;
-    width: 450px; /* Puedes ajustar el ancho del submenú */
+    width: 450px; 
     height: 150px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+    z-index: 100; 
 }
 
 .dropdown__menu p {
@@ -127,7 +125,7 @@ main{
     font-size: 14px;
 }
 
-/* Estilo para los enlaces en el submenú (opcional) */
+
 .dropdown__menu a {
     color: white;
     text-decoration: none;
@@ -186,7 +184,7 @@ margin-bottom: 100px;
     margin-bottom: -100px;
 }
 
-/*Desarrollo de software*/
+
 .desarrollo-software{
     margin-top: 200px;
 }
@@ -211,14 +209,14 @@ margin-bottom: 100px;
     
   }
   
-  .text-content_intro__title { /* Estilo para el h2 */
-    font-size: 2.5em; /* Ajusta el tamaño según tus necesidades */
+  .text-content_intro__title {
+    font-size: 2.5em; 
     margin-bottom: 10px; 
     color: #c8b4d4;
   }
   
-  .text-content_intro___description { /* Estilo para el p */
-    font-size: 1.3em; /* Ajusta el tamaño según tus necesidades */
+  .text-content_intro___description { 
+    font-size: 1.3em; 
   }
   
   .image-content_intro{
@@ -234,8 +232,8 @@ margin-bottom: 100px;
 
   /*desarrollo software habilidades y roles comunes*/
   .contenedor-principal {
-    display: flex; /* Activamos Flexbox para el contenedor principal */
-    gap: 10px; /* Espacio entre las secciones */
+    display: flex; 
+    gap: 10px; 
     background-color: #282424;
     border-radius: 10px;
     padding: 20px;
@@ -244,25 +242,25 @@ margin-bottom: 100px;
   }
   
   .habilidades-clave {
-    width: 100%; /* Ajusta el ancho de "Habilidades clave" */
+    width: 100%; 
   }
   
   .roles-comunes_desarrollo {
-    width: 30%; /* Ajusta el ancho de "Roles comunes" */
-    display: grid; /* Activamos CSS Grid para "Roles comunes" */
-    gap: 10px; /* Espacio entre los roles */
+    width: 30%;
+    display: grid; 
+    gap: 10px; 
     padding-left: 50px;
   }
   
   .roles-comunes_desarrollo ul {
-    list-style: none; /* Quitamos los puntos de la lista */
+    list-style: none;
   }
   
   .roles-comunes_desarrollo li {
-    background-color: rgb(56, 27, 124); /* Color de fondo para cada rol */
-    color: white; /* Color de texto blanco */
-    padding: 10px; /* Espacio interno para cada rol */
-    text-align: center; /* Alineamos el texto al centro */
+    background-color: rgb(56, 27, 124); 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
   }
 
   .rol_item{
@@ -271,11 +269,11 @@ margin-bottom: 100px;
   margin: 10px; 
   float: left; 
   padding: auto; 
-  flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
-  padding: 15px; /* Espaciado interno dentro de los cuadros */
-  width: 30%; /* Ajusta el ancho de cada cuadro */
-  min-width: 250px; /* Opcional: establece un ancho mínimo */
-  height: auto; /* Permite que la altura se ajuste dinámicamente */
+  flex: 1; 
+  padding: 15px; 
+  width: 30%; 
+  min-width: 250px; 
+  height: auto; 
 }
 
 .rolesComunesTitulo{
@@ -290,7 +288,7 @@ margin-bottom: 100px;
 }
 
 .roles-comunes_desarrollo li:first-child {
-    margin-top: -10px; /* Ajusta el valor negativo según sea necesario */
+    margin-top: -10px; 
   }
 
 
@@ -302,14 +300,14 @@ margin-bottom: 100px;
     color: #fff;
 }
 
-/* Media Queries */
+
 @media (max-width: 1024px) {
     .main__section--ods {
-        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+        margin: 0 100px; 
     }
 
     .header__container {
-        flex-wrap: wrap; /* Permitir que el header sea flexible */
+        flex-wrap: wrap; 
     }
 
     .header__logo {
@@ -319,15 +317,15 @@ margin-bottom: 100px;
 
 @media (max-width: 768px) {
     .main__section--ods {
-        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+        margin: 0 20px; 
     }
 
     .main__section--resources {
-        flex-direction: column; /* Apilar los elementos verticalmente */
+        flex-direction: column; 
     }
 
     .section__div {
-        height: auto; /* Dejar que el alto se ajuste automáticamente */
+        height: auto; 
     }
 
     .header__nav {
@@ -336,7 +334,7 @@ margin-bottom: 100px;
     }
 
     .header__nav--item {
-        padding: 5px; /* Reducir espaciado entre elementos del menú */
+        padding: 5px; 
     }
 }
 
@@ -346,14 +344,14 @@ margin-bottom: 100px;
     }
 
     .header__nav {
-        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+        display: none; 
     }
 
     .section__div {
-        padding: 10px; /* Más compacto */
+        padding: 10px;
     }
 
     .div__button {
-        padding: 8px 12px; /* Reducir tamaño del botón */
+        padding: 8px 12px;
     }
 }
