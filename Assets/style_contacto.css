@@ -65,6 +65,42 @@ main{
     transition: color 0.3s;
 }
 
+.header__nav--dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+.dropdown__menu {
+    display: none; /* Inicialmente está oculto */
+    position: absolute;
+    top: 100%; /* Alinea el submenú debajo del item */
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 450px; /* Puedes ajustar el ancho del submenú */
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+}
+
+.dropdown__menu p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Estilo para los enlaces en el submenú (opcional) */
+.dropdown__menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown__menu a:hover {
+    background-color: #A64D79;
+}
 h2{
     text-align: center;
     margin: 0;

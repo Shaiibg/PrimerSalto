@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background-color: #1A1A1D;
+    background-color: #282424;
     color: #fff;
     padding: 0 20px 0 20px;
     
@@ -57,6 +57,86 @@ body {
     transition: color 0.3s;
 }
 
+/* Estilos generales del header */
+.header {
+    background-color: #282424;
+    color: white;
+    padding: 0 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.header__nav--list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav--item {
+    position: relative;
+}
+
+.header__nav--link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.header__nav--link:hover {
+    border-radius: 5px;
+}
+
+/* Estilos del menú desplegable */
+.header__nav--dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+.dropdown__menu {
+    display: none; /* Inicialmente está oculto */
+    position: absolute;
+    top: 100%; /* Alinea el submenú debajo del item */
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 450px; /* Puedes ajustar el ancho del submenú */
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+}
+
+.dropdown__menu p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Estilo para los enlaces en el submenú (opcional) */
+.dropdown__menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown__menu a:hover {
+    background-color: #A64D79;
+}
+
 
 /*intro*/
 .intro_descripcion{
@@ -77,7 +157,7 @@ body {
 }
 
 .intro_descripcion p{
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 /*como leer una oferta*/
