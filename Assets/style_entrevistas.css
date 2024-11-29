@@ -8,7 +8,7 @@ body {
 main{
     margin: 10px;
 }
-/* Estilos generales */
+
 .header {
     background-color: #282424;
     color: #fff;
@@ -60,7 +60,7 @@ main{
     transition: color 0.3s;
 }
 
-/* Estilos generales del header */
+
 .header {
     background-color: #282424;
     color: white;
@@ -102,24 +102,24 @@ main{
     border-radius: 5px;
 }
 
-/* Estilos del menú desplegable */
+
 .header__nav--dropdown:hover .dropdown__menu {
     display: block;
 }
 
 .dropdown__menu {
-    display: none; /* Inicialmente está oculto */
+    display: none;
     position: absolute;
-    top: 100%; /* Alinea el submenú debajo del item */
+    top: 100%;
     left: 0;
     background-color: #333;
     color: white;
     padding: 10px;
-    width: 450px; /* Puedes ajustar el ancho del submenú */
+    width: 450px;
     height: 150px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+    z-index: 100; 
 }
 
 .dropdown__menu p {
@@ -128,7 +128,7 @@ main{
     font-size: 14px;
 }
 
-/* Estilo para los enlaces en el submenú (opcional) */
+
 .dropdown__menu a {
     color: white;
     text-decoration: none;
@@ -159,7 +159,6 @@ main{
     display: flex;
     flex-wrap: wrap; 
     gap: 20px;
-    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);*/
     background-color: #282424;
     border-radius: 10px;
     margin-bottom: 120px;
@@ -185,7 +184,6 @@ main{
 }
 
 .respuestas{
-    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);*/
     background-color: #282424;
     border-radius: 10px;
     margin-top: 20px;
@@ -223,11 +221,11 @@ main{
     margin: 10px; 
     float: left; 
     padding: auto; 
-    flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
-    padding: 15px; /* Espaciado interno dentro de los cuadros */
-    width: 30%; /* Ajusta el ancho de cada cuadro */
-    min-width: 250px; /* Opcional: establece un ancho mínimo */
-    height: 450px; /* Permite que la altura se ajuste dinámicamente */
+    flex: 1; 
+    padding: 15px; 
+    width: 30%; 
+    min-width: 250px; 
+    height: 450px; 
 }
 #pregunta{
     height: auto;
@@ -260,7 +258,7 @@ footer {
     }
 
     .respuestas__item {
-        max-width: 150px; /* Reduce el tamaño de los cuadros */
+        max-width: 150px; 
     }
 }
 
