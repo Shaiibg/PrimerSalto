@@ -13,7 +13,7 @@
     <script>
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY; // Obtiene la posición del scroll
-            const zoomLevel = 100 + scrollPosition * 0.1; // Ajusta el factor de zoom
+            const zoomLevel = 100 + scrollPosition * 0.06; // Ajusta el factor de zoom
             document.body.style.backgroundSize = `${zoomLevel}% auto`;
         });
     </script>
@@ -112,11 +112,97 @@
         <section class="main__section main__section--data">
             <div class="main__div--datos">
                 <h2>Datos</h2>
-                <p>Accede a datos clave para entender el mercado laboral en tecnología. Descubre estadísticas de empleo que te ayudarán a identificar tendencias y analiza gráficos detallados sobre el crecimiento y las oportunidades del sector TI en México.
+                <p>datos clave para entender el mercado laboral en tecnología. Descubre estadísticas de empleo que te ayudarán a identificar tendencias y analiza gráficos detallados sobre el crecimiento y las oportunidades del sector TI en México.
                 </p>
-                <a href="estadisticas.html"><button class="div__button_data">estadísticas de empleo</button></a>
-            <a href="graficas.html"><button class="div__button_data"> Gráficas de México en el sector TI</button></a>
-            </div>
+                <h3 class="Grafica_titulo">Salarios de Trabajos de Tecnologias</h3>
+                <p class="Grafica_descripcion">La gráfica presenta los salarios promedio de trabajos en Tecnologías de la Información (TI) en los diferentes estados de México. Estos datos destacan las variaciones salariales según la ubicación geográfica, reflejando cómo la demanda de talento tecnológico y el costo de vida influyen en las oportunidades económicas en el sector.</p>
+                <div class="Graficas_trabajos">
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <h3 class="Grafica_titulo">Porcentaje de tecnologias con mas crecimiento</h3>
+                <p class="Grafica_descripcion">La gráfica muestra el porcentaje de crecimiento de las tecnologías más demandadas en la industria, como Java, .Net, SAP y Python. Estos datos reflejan las tendencias actuales del mercado laboral en Tecnologías de la Información, destacando las habilidades más valoradas y con mayor proyección de crecimiento en el sector.</p>
+                <div class="Graficas_trabajos">
+                    <canvas id="myChart"></canvas>
+                </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'pie',
+                      data: {
+                        labels: ['Java', '.Net', 'SAP', 'Python','Scrum', 'Azure','Aws'],
+                        datasets: [{
+                          label: 'Porcentaje de tecnologias con mas crecimiento',
+                          data: [9.8, 4.4, 3.8, 3.2,3.2,3.2,2.9], backgroundColor:
+                          ['rgba(144, 238, 144, 1)', 'rgba(255, 105, 180, 1)', 'rgba(255, 165, 0, 1)', 'rgba(138, 43, 226, 1)', 'rgba(30, 144, 255, 1)', 'rgba(238, 130, 238, 1)', 'rgba(255, 255, 0, 1)'],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                            x: {
+                            ticks: {
+                                color: 'white' // Cambia el color de las etiquetas del eje X a blanco
+                            }
+                        },
+
+                          y: {
+                            ticks: {
+                            color: 'white' // Cambia el color de las etiquetas del eje Y a blanco
+                            },
+                            beginAtZero: true
+                          }
+                          
+                        }
+                      }
+                    });
+                  </script>
+
+                    <script>
+                        const ctx2 = document.getElementById('myChart2');
+                    
+                        new Chart(ctx2, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Nuevo Leon', 'Quintana Roo', 'Queretaro', 'Jalisco', 'Cdmx', 'Baja Califorina Norte', 'Aguascalientes', 'Yucatan'],
+                            datasets: [{
+                            label: 'Salarios de trabajos en tecnologias',
+                            data: [41392.5, 39312.5, 37560.6, 35820.2, 35202, 35172.8, 33478.1, 33013.6 ], backgroundColor:
+                            [
+                                'rgba(255, 99, 132, 1)',  
+                                'rgba(54, 162, 235, 1)',  
+                                'rgba(255, 206, 86, 1)',   
+                                'rgba(75, 192, 192, 1)',   
+                                'rgba(153, 102, 255, 1)',  
+                                'rgba(255, 159, 64, 1)',   
+                                'rgba(201, 203, 207, 1)',  
+                                'rgba(0, 128, 128, 1)'     
+                            ],
+                            borderWidth: 1
+                            }]
+                        },
+                        options: {
+                        scales: {
+                            x: {
+                            ticks: {
+                                color: 'white' // Cambia el color de las etiquetas del eje X a blanco
+                            }
+                        },
+
+                          y: {
+                            ticks: {
+                            color: 'white' // Cambia el color de las etiquetas del eje Y a blanco
+                            },
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                    </script>
+                  </div>
         </section>
     </main>
     <footer>

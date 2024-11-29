@@ -266,6 +266,244 @@ body {
     border-radius: 10px;
     color: #fff; /* Texto blanco */
     text-align: center; /* Centrar texto */
+    margin: 100px auto;
+}
+
+.main__div--datos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+.main__div--datos p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.main__div--datos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Botones de la sección de datos */
+
+
+/* Links para asegurar que el botón se muestre correctamente */
+.main__div--datos a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; /* Espaciado entre los botones */
+}
+
+.background-img{
+    height: 468px;
+}
+
+/* Sección de estadísticas */
+.statistics {
+    margin-top: 100px;
+    background-color: #282424;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+.statistics__title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.statistics__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite apilar en pantallas pequeñas */
+}
+
+.statistics__item {
+    flex: 1;
+    max-width: 300px; /* Ajusta el ancho de cada estadística */
+    text-align: center;
+}
+
+.statistics__number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #782c8c; /* Rojo brillante */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.statistics__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.Graficas_trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 50px;
+    width: 50%;
+    max-width: 600px; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+.Grafica_titulo{
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: -30px;
+}
+
+.Grafica_descripcion{
+    text-align: left;
+    padding-left: 40px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #282424;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .main__section--ods {
+        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+    }
+
+    .header__container {
+        flex-wrap: wrap; /* Permitir que el header sea flexible */
+    }
+
+    .header__logo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__section--ods {
+        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+    }
+
+    .main__section--resources {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    .section__div {
+        height: auto; /* Dejar que el alto se ajuste automáticamente */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav--item {
+        padding: 5px; /* Reducir espaciado entre elementos del menú */
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 16px;
+    }
+
+    .header__nav {
+        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+    }
+
+    .section__div {
+        padding: 10px; /* Más compacto */
+    }
+
+    .div__button {
+        padding: 8px 12px; /* Reducir tamaño del botón */
+    }
+}
+    justify-content: space-between;
+    height: 400px;
+    margin: 20px;
+}
+
+
+.div__button {
+    margin-top: auto;
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.div__button:hover{
+    background-color: #a4bcd4; 
+
+}
+
+.div__a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Sección Empleos */
+.section__div--empleos {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    background-color: #181414;
+}
+
+.section__div--empleos h2 {
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold;
+    font-weight: bold; /* Puedes ajustar el grosor si lo necesitas */
+    margin-bottom: 10px; /* Ajusta el espacio inferior entre el título y el párrafo */
+
+}
+
+
+.section__div--empleos p {
+    text-align: center;
+    line-height: 1.5; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+}
+
+
+.main__divgeneral {
+    display: flex;
+    margin-top: -40px; /* Usa valores negativos para moverlos hacia arriba */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.section__div--cambios {
+    flex: 1; /* Asegúrate de que los cuadros se ajusten proporcionalmente */
+    padding: 15px; /* Espaciado interno dentro de los cuadros */
+    width: 30%; /* Ajusta el ancho de cada cuadro */
+    min-width: 250px; /* Opcional: establece un ancho mínimo */
+    height: auto; /* Permite que la altura se ajuste dinámicamente */
+}
+
+/* Sección Datos */
+.main__section--data {
+    background-color: #282424; /* Fondo negro */
+    border-radius: 10px;
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrar texto */
     padding: 20px;
     margin: 100px auto;
     max-width: 800px;
