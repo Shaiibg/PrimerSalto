@@ -59,7 +59,7 @@ main{
     transition: color 0.3s;
 }
 
-/* Estilos generales del header */
+
 .header {
     background-color: #282424;
     color: white;
@@ -101,24 +101,24 @@ main{
     border-radius: 5px;
 }
 
-/* Estilos del menú desplegable */
+
 .header__nav--dropdown:hover .dropdown__menu {
     display: block;
 }
 
 .dropdown__menu {
-    display: none; /* Inicialmente está oculto */
+    display: none;
     position: absolute;
-    top: 100%; /* Alinea el submenú debajo del item */
+    top: 100%;
     left: 0;
     background-color: #333;
     color: white;
     padding: 10px;
-    width: 450px; /* Puedes ajustar el ancho del submenú */
+    width: 450px; 
     height: 150px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100; /* Asegura que el submenú esté por encima de otros elementos */
+    z-index: 100; 
 }
 
 .dropdown__menu p {
@@ -127,7 +127,7 @@ main{
     font-size: 14px;
 }
 
-/* Estilo para los enlaces en el submenú (opcional) */
+
 .dropdown__menu a {
     color: white;
     text-decoration: none;
@@ -160,7 +160,6 @@ font-size: 1.2em;
 }
 
 .plantillas__contenido{
-    /*border: 1px solid #fff;*/
     margin-top: 100px;
 }
 
@@ -231,16 +230,16 @@ margin-top: 125px;
 }
 
 .recuadro {
-    background-color: #fff; /* Color de fondo del recuadro */
-    color: #000;            /* Color del texto */
-    padding: 5px 10px;     /* Espacio interno del recuadro */
-    border-radius: 5px;    /* Bordes redondeados */
-    text-align: center;      /* Texto centrado */
-    font-size: 14px;       /* Tamaño de la fuente */
-    margin-top: 5px;        /* Espacio entre la imagen y el recuadro */
+    background-color: #fff;
+    color: #000;           
+    padding: 5px 10px;     
+    border-radius: 5px; 
+    text-align: center;   
+    font-size: 14px;      
+    margin-top: 5px;       
 }
 
-/*javascript*/
+
 .modal {
     display: none; 
     position: fixed; 
@@ -282,11 +281,11 @@ footer {
 
 @media (max-width: 1024px) {
     .main__section--ods {
-        margin: 0 100px; /* Reducir márgenes en pantallas medianas */
+        margin: 0 100px; 
     }
 
     .header__container {
-        flex-wrap: wrap; /* Permitir que el header sea flexible */
+        flex-wrap: wrap;
     }
 
     .header__logo {
@@ -296,15 +295,15 @@ footer {
 
 @media (max-width: 768px) {
     .main__section--ods {
-        margin: 0 20px; /* Más compacto en pantallas pequeñas */
+        margin: 0 20px; 
     }
 
     .main__section--resources {
-        flex-direction: column; /* Apilar los elementos verticalmente */
+        flex-direction: column;
     }
 
     .section__div {
-        height: auto; /* Dejar que el alto se ajuste automáticamente */
+        height: auto; 
     }
 
     .header__nav {
@@ -313,7 +312,7 @@ footer {
     }
 
     .header__nav--item {
-        padding: 5px; /* Reducir espaciado entre elementos del menú */
+        padding: 5px;
     }
 }
 
@@ -323,14 +322,14 @@ footer {
     }
 
     .header__nav {
-        display: none; /* Ocultar el menú en pantallas muy pequeñas (puedes implementar un menú hamburguesa aquí) */
+        display: none;
     }
 
     .section__div {
-        padding: 10px; /* Más compacto */
+        padding: 10px; 
     }
 
     .div__button {
-        padding: 8px 12px; /* Reducir tamaño del botón */
+        padding: 8px 12px;
     }
 }
