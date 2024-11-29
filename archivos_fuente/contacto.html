@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/style_contacto.css">
+    <meta name="author" content="Shai Bañuelos, Oscar Acuña Gámez">
+    <link rel="stylesheet" href="../assets/style_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                Lucky <img src="../imagenes/trebolpng.png" alt="trébol de tres hojas" class="header__logo--image">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
+                    <li class="header__nav--item"><a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a></li>
+                    <li class="header__nav--item"><a href="../assets/style_contacto.css" class="header__nav--link">Contacto</a></li>
+                    <li class="header__nav--item"><a href="#objetivo" class="header__nav--link">Objetivo</a></li>
+                </ul>
+            </nav>
+            <label for="toggle" id="label_toggle"><i class="fa-regular fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
+        </div>
+    </header>
+    <main>
+        <form id="contacto" action="http://52.43.117.247/neo/classroom/tw/concurso.php" method="post">
+            <h2>
+                Formulario de contacto
+            </h2>
+            <fieldset>
+                <legend>INFORMACIÓN BÁSICA</legend>
+                <!--SIMPLE INPUTS-->
+                <div class="form_input">
+                    <label>Nombre completo
+                        <input type="text" placeholder="Pedro Juarez Juarez" required>
+                    </label>
+                </div>
+                <div class="form_input">
+                    <label>Email<!--Poner el label como contenerder de lo que queremos que este asociado es otra forma de ligarlos-->
+                        <input type="email" placeholder="ejemplo@gmail.com" required>
+                    </label>
+                </div>
+                <div class="form_input">
+                    <label>Asunto
+                        <input type="text" placeholder="Asunto de tu mensaje" required>
+                    </label>
+                </div>
+            </fieldset>
+            <!--SELECT & OPTION-->
+            <div class="form_input">
+                <label> Tipo de usuarios
+                    <select name="type-of-use">
+                        <option value="user1">Seguidor</option>
+                        <option value="user2">Empresa</option>
+                        <option value="user3">Otros</option>
+                    </select>
+                </label>
+            </div>
+            <!--DATALIST & OPTIONS-->
+            <div class="form_input">
+                <label> Referente
+                    <input list="referente" name="referente">
+                    <datalist id="referente" name="type-of-use">
+                        <option value="Shai">Un estudiante</option>
+                        <option value="Empresa">Una empresa relacionada con este rubro</option>
+                        <option value="Anuncio">Un anuncio publicitario</option>
+                    </datalist>
+                </label>
+            </div>
+            <!--TEXTAREA-->
+            <div class="form_input">
+                <label for="mensaje">Mensaje</label><!--el for que esta en el label es el mismo que el id del componente con el que lo queremos asociar-->
+                <textarea rows="8" placeholder="Escribe un mensaje" id="mensaje"></textarea>
+            </div>
+            <div class="button-container">
+                <button class="div__button">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
