@@ -19,7 +19,6 @@
                     <li class="header__nav--item"><a href="index.html" class="header__nav--link">Inicio</a></li>
                     <li class="header__nav--item header__nav--dropdown">
                         <a href="#sobreNosotros" class="header__nav--link">Sobre Nosotros</a>
-                        <!-- Submenú desplegable -->
                         <div class="dropdown__menu">
                             <p>
                                 <strong>Conoce nuestra historia</strong>
@@ -28,7 +27,6 @@
                     </li>
                     <li class="header__nav--item header__nav--dropdown">
                         <a href="#objetivo" class="header__nav--link">Objetivo</a>
-                        <!-- Submenú desplegable -->
                         <div class="dropdown__menu">
                             <p>
                                 <strong>Nuestro Objetivo</strong>
@@ -46,14 +44,13 @@
             </h2>
             <fieldset>
                 <legend>INFORMACIÓN BÁSICA</legend>
-                <!--SIMPLE INPUTS-->
                 <div class="form_input">
                     <label>Nombre completo
                         <input type="text" placeholder="Pedro Juarez Juarez" required>
                     </label>
                 </div>
                 <div class="form_input">
-                    <label>Email<!--Poner el label como contenerder de lo que queremos que este asociado es otra forma de ligarlos-->
+                    <label>Email
                         <input type="email" placeholder="ejemplo@gmail.com" required>
                     </label>
                 </div>
@@ -63,7 +60,6 @@
                     </label>
                 </div>
             </fieldset>
-            <!--SELECT & OPTION-->
             <div class="form_input">
                 <label> Tipo de usuarios
                     <select name="type-of-use">
@@ -73,7 +69,6 @@
                     </select>
                 </label>
             </div>
-            <!--DATALIST & OPTIONS-->
             <div class="form_input">
                 <label> Referente
                     <input list="referente" name="referente">
@@ -84,9 +79,8 @@
                     </datalist>
                 </label>
             </div>
-            <!--TEXTAREA-->
             <div class="form_input">
-                <label for="mensaje">Mensaje</label><!--el for que esta en el label es el mismo que el id del componente con el que lo queremos asociar-->
+                <label for="mensaje">Mensaje</label>
                 <textarea rows="8" placeholder="Escribe un mensaje" id="mensaje"></textarea>
             </div>
             <div class="button-container">
